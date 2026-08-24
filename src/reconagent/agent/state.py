@@ -20,6 +20,7 @@ class Turn:
     arguments: dict
     reasoning: str
     outcome: ToolOutcome
+    tool_use_id: str | None = None
 
 
 @dataclass
@@ -75,6 +76,7 @@ class PolicyDecision:
     reasoning: str = ""
     input_tokens: int = 0
     output_tokens: int = 0
+    tool_use_id: str | None = None
 
     @property
     def gave_up(self) -> bool:

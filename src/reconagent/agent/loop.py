@@ -150,6 +150,7 @@ def run_episode(
                 arguments=decision.arguments,
                 reasoning=decision.reasoning,
                 outcome=outcome,
+                tool_use_id=decision.tool_use_id,
             )
         )
 
