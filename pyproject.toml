@@ -1,8 +1,8 @@
 [project]
 name = "ragcite"
-version = "0.1.0"
-description = "Citation-grounded RAG over a regulated document corpus"
-requires-python = ">=3.10"
+version = "0.2.0"
+description = "Citation-grounded RAG (ragcite) and a reconciliation agent with an MCP tool surface (reconagent)"
+requires-python = ">=3.11"
 readme = "README.md"
 license = { text = "MIT" }
 dependencies = [
@@ -19,12 +19,18 @@ dependencies = [
     "python-dotenv>=1.0.1",
     "tiktoken>=0.7.0",
     "requests>=2.31.0",
+    "mcp>=1.9.0",
 ]
 
 [project.optional-dependencies]
 llm = ["anthropic>=0.28.0", "openai>=1.30.0"]
 embeddings = ["sentence-transformers>=2.7.0"]
+agent = ["pydantic-ai-slim[anthropic]>=2.0.0"]
 dev = ["pytest>=8.2.0", "pytest-cov>=5.0.0", "ruff>=0.4.4"]
+
+[project.scripts]
+reconagent = "reconagent.cli:main"
+reconagent-mcp = "reconagent.mcp_server:main"
 
 [build-system]
 requires = ["setuptools>=68.0"]

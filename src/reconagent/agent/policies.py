@@ -225,7 +225,7 @@ class RulesPolicy(_OfflinePolicy):
 
     def _classify(self, state: AgentState, ev: _Evidence) -> PolicyDecision:
         exception_id = state.exception_id
-        inv, txn, acct = ev.invoice, ev.transaction, ev.accounting
+        inv, txn = ev.invoice, ev.transaction
 
         if inv["currency"] != txn["currency"]:
             return self._classify_fx(state, ev)

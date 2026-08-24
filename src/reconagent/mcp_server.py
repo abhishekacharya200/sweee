@@ -75,7 +75,7 @@ def _resource_body(store: LedgerStore, uri: str) -> str:
 
 def build_server(store: LedgerStore) -> Any:
     """Wire the registry, resources and one prompt onto a low-level MCP server."""
-    import mcp.types as types
+    from mcp import types
     from mcp.server.lowlevel import Server
     from pydantic import AnyUrl
 

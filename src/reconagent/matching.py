@@ -12,6 +12,7 @@ from __future__ import annotations
 import re
 from dataclasses import dataclass
 from difflib import SequenceMatcher
+from string import ascii_uppercase
 
 # Character confusions that only ever occur in the numeric tail of a reference.
 # Applying these to the alpha prefix would turn "INV" into "1NV".
@@ -58,9 +59,24 @@ def reference_shaped_substrings(gram: str) -> list[str]:
     Substring search rather than a full match, because rails bolt their own
     prefixes on: `/RFB/INV-2026-0142` compacts to `RFBINV20260142`, which is
     not itself a reference but contains one.
+
+    Each run is also emitted with its leading letters shaved off one at a
+    time. The regex takes the leftmost alignment it can find, which on that
+    example is `BINV20260142` — close enough to still rank first, but the
+    trimmed `INV20260142` is the string that actually scores 1.0, and a
+    matcher that reports 0.96 for an exact reference erodes any threshold
+    built on top of it.
     """
     compact = re.sub(r"[^A-Za-z0-9]", "", gram).upper()
-    return [m.group(0) for m in _REF_SHAPE.finditer(compact)]
+    fragments: list[str] = []
+    for match in _REF_SHAPE.finditer(compact):
+        run = match.group(0)
+        letters = len(run) - len(run.lstrip(ascii_uppercase))
+        for shave in range(letters - 1):
+            candidate = run[shave:]
+            if candidate not in fragments:
+                fragments.append(candidate)
+    return fragments
 
 
 @dataclass(frozen=True)

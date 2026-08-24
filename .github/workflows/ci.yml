@@ -20,7 +20,7 @@ jobs:
         run: |
           pip install --upgrade pip
           pip install -r requirements.txt
-          pip install -e ".[dev]"
+          pip install -e ".[dev,agent]"
 
       - name: Lint
         run: ruff check src tests scripts
@@ -50,6 +50,23 @@ jobs:
           path: |
             eval/report.md
             eval/results.json
+
+      - name: Check the agent tool surface exports
+        run: |
+          python -m reconagent.cli tools --json --mcp > /dev/null
+          python -m reconagent.cli queue --limit 3
+
+      - name: Run agent eval gate (offline rules policy, $0)
+        run: python scripts/run_agent_eval.py
+
+      - name: Upload agent eval report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: agent-eval-report
+          path: |
+            eval/agent/report.md
+            eval/agent/results.json
 
       - name: Docker build (api + ui images)
         run: |

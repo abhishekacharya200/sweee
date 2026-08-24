@@ -10,9 +10,9 @@ behind it. Adding a tool is one entry here and nothing else.
 from __future__ import annotations
 
 import time
+from collections.abc import Callable
 from copy import deepcopy
-from dataclasses import dataclass, field
-from typing import Callable
+from dataclasses import dataclass
 
 from pydantic import BaseModel, ValidationError
 
