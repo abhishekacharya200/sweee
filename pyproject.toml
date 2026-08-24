@@ -19,7 +19,12 @@ dependencies = [
     "python-dotenv>=1.0.1",
     "tiktoken>=0.7.0",
     "requests>=2.31.0",
-    "mcp>=1.9.0",
+    # Pinned below 2.0: the MCP 2.x low-level server replaced the decorator
+    # registration this server is built on, and its high-level API derives
+    # tool schemas from function signatures rather than accepting the JSON
+    # schema the registry already produces. Moving to 2.x is a port, not a
+    # version bump, so it stays a deliberate piece of work.
+    "mcp>=1.9,<2",
 ]
 
 [project.optional-dependencies]
