@@ -102,7 +102,15 @@ class SearchBankTransactionsOutput(BaseModel):
 
 class ExtractInvoiceReferenceInput(BaseModel):
     memo: str = Field(description="Raw bank memo text to mine for an invoice reference.")
-    top_k: int = Field(default=5, ge=1, le=10)
+    candidate_invoice_ids: list[str] | None = Field(
+        default=None,
+        description=(
+            "Score the memo against only these invoices. Strongly preferred once you have a "
+            "shortlist: ranking against the whole ledger returns near-identical scores for "
+            "hundreds of similar ids and can truncate the right one out of the top_k."
+        ),
+    )
+    top_k: int = Field(default=5, ge=1, le=25)
     min_score: float = Field(
         default=0.6, ge=0.0, le=1.0, description="Drop candidates scoring below this similarity."
     )

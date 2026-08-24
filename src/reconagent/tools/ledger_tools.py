@@ -76,8 +76,12 @@ def search_bank_transactions(
 def extract_invoice_reference(
     store: LedgerStore, payload: s.ExtractInvoiceReferenceInput
 ) -> s.ExtractInvoiceReferenceOutput:
+    if payload.candidate_invoice_ids is None:
+        invoice_ids = list(store.invoices)
+    else:
+        invoice_ids = [inv_id for inv_id in payload.candidate_invoice_ids if inv_id in store.invoices]
     candidates = rank_reference_candidates(
-        payload.memo, list(store.invoices), top_k=payload.top_k, min_score=payload.min_score
+        payload.memo, invoice_ids, top_k=payload.top_k, min_score=payload.min_score
     )
     return s.ExtractInvoiceReferenceOutput(
         candidates=[
