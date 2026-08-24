@@ -1,5 +1,16 @@
 {
-  "generated_at": "2026-08-24T11:38:34.427160+00:00",
+  "generated_at": "2026-08-24T17:21:27.976448+00:00",
+  "cost_basis": {
+    "tokenizer": "char-estimate",
+    "projection_model": "claude-sonnet-5",
+    "fixed_prefix_tokens": 2881,
+    "mean_input_tokens": 14900,
+    "resent_prefix_tokens": 13800,
+    "resent_prefix_share": 0.9262,
+    "projected_cost_usd_per_task": 0.04824,
+    "projected_cost_usd_per_task_cached": 0.020919,
+    "cache_saving": 0.5664
+  },
   "suites": [
     {
       "policy": "rules",
@@ -18,7 +29,7 @@
         "mean_steps": 4.79,
         "mean_tool_errors": 0,
         "mean_retries": 0,
-        "mean_latency_s": 0.0053,
+        "mean_latency_s": 0.0036,
         "cost_usd_per_task": 0.0,
         "projected_cost_usd_per_task": 0.048235,
         "mean_input_tokens": 14900,
@@ -87,7 +98,7 @@
           "output_tokens": 196,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.03996,
-          "wall_clock_s": 0.3332
+          "wall_clock_s": 0.2119
         },
         {
           "task_id": "T002",
@@ -167,7 +178,7 @@
           "output_tokens": 189,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.039879,
-          "wall_clock_s": 0.0005
+          "wall_clock_s": 0.0004
         },
         {
           "task_id": "T006",
@@ -187,7 +198,7 @@
           "output_tokens": 358,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.072159,
-          "wall_clock_s": 0.0014
+          "wall_clock_s": 0.0017
         },
         {
           "task_id": "T007",
@@ -247,7 +258,7 @@
           "output_tokens": 198,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.040062,
-          "wall_clock_s": 0.0003
+          "wall_clock_s": 0.0004
         },
         {
           "task_id": "T010",
@@ -267,7 +278,7 @@
           "output_tokens": 360,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.072279,
-          "wall_clock_s": 0.0012
+          "wall_clock_s": 0.0013
         },
         {
           "task_id": "T011",
@@ -287,7 +298,7 @@
           "output_tokens": 361,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.072327,
-          "wall_clock_s": 0.0011
+          "wall_clock_s": 0.0012
         },
         {
           "task_id": "T012",
@@ -307,7 +318,7 @@
           "output_tokens": 189,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.039873,
-          "wall_clock_s": 0.0004
+          "wall_clock_s": 0.0003
         },
         {
           "task_id": "T013",
@@ -347,7 +358,7 @@
           "output_tokens": 290,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.060843,
-          "wall_clock_s": 0.001
+          "wall_clock_s": 0.0014
         },
         {
           "task_id": "T015",
@@ -387,7 +398,7 @@
           "output_tokens": 290,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.060858,
-          "wall_clock_s": 0.0009
+          "wall_clock_s": 0.001
         },
         {
           "task_id": "T017",
@@ -427,7 +438,7 @@
           "output_tokens": 268,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.050682,
-          "wall_clock_s": 0.0005
+          "wall_clock_s": 0.0006
         },
         {
           "task_id": "T019",
@@ -447,7 +458,7 @@
           "output_tokens": 197,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.040023,
-          "wall_clock_s": 0.0003
+          "wall_clock_s": 0.0004
         },
         {
           "task_id": "T020",
@@ -467,7 +478,7 @@
           "output_tokens": 289,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.060822,
-          "wall_clock_s": 0.0008
+          "wall_clock_s": 0.001
         },
         {
           "task_id": "T021",
@@ -487,7 +498,7 @@
           "output_tokens": 189,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.03987,
-          "wall_clock_s": 0.0003
+          "wall_clock_s": 0.0004
         },
         {
           "task_id": "T022",
@@ -527,7 +538,7 @@
           "output_tokens": 290,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.060855,
-          "wall_clock_s": 0.0009
+          "wall_clock_s": 0.001
         },
         {
           "task_id": "T024",
@@ -567,7 +578,7 @@
           "output_tokens": 189,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.03987,
-          "wall_clock_s": 0.0003
+          "wall_clock_s": 0.0004
         },
         {
           "task_id": "T026",
@@ -607,7 +618,7 @@
           "output_tokens": 266,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.050628,
-          "wall_clock_s": 0.0005
+          "wall_clock_s": 0.0006
         },
         {
           "task_id": "T028",
@@ -647,7 +658,7 @@
           "output_tokens": 359,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.072249,
-          "wall_clock_s": 0.001
+          "wall_clock_s": 0.0013
         },
         {
           "task_id": "T030",
@@ -667,7 +678,7 @@
           "output_tokens": 196,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.03996,
-          "wall_clock_s": 0.0003
+          "wall_clock_s": 0.0005
         },
         {
           "task_id": "T031",
@@ -687,7 +698,7 @@
           "output_tokens": 189,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.039876,
-          "wall_clock_s": 0.0003
+          "wall_clock_s": 0.0005
         },
         {
           "task_id": "T032",
@@ -707,7 +718,7 @@
           "output_tokens": 268,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.0507,
-          "wall_clock_s": 0.0006
+          "wall_clock_s": 0.0008
         },
         {
           "task_id": "T033",
@@ -727,7 +738,7 @@
           "output_tokens": 182,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.039213,
-          "wall_clock_s": 0.0004
+          "wall_clock_s": 0.0003
         },
         {
           "task_id": "T034",
@@ -747,7 +758,7 @@
           "output_tokens": 289,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.060807,
-          "wall_clock_s": 0.0008
+          "wall_clock_s": 0.0011
         },
         {
           "task_id": "T035",
@@ -767,7 +778,7 @@
           "output_tokens": 197,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.039993,
-          "wall_clock_s": 0.0003
+          "wall_clock_s": 0.0005
         },
         {
           "task_id": "T036",
@@ -787,7 +798,7 @@
           "output_tokens": 360,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.07227,
-          "wall_clock_s": 0.0011
+          "wall_clock_s": 0.0013
         },
         {
           "task_id": "T037",
@@ -827,7 +838,7 @@
           "output_tokens": 189,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.039885,
-          "wall_clock_s": 0.0003
+          "wall_clock_s": 0.0004
         },
         {
           "task_id": "T039",
@@ -847,7 +858,7 @@
           "output_tokens": 290,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.06087,
-          "wall_clock_s": 0.0008
+          "wall_clock_s": 0.001
         },
         {
           "task_id": "T040",
@@ -867,7 +878,7 @@
           "output_tokens": 199,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.040086,
-          "wall_clock_s": 0.0003
+          "wall_clock_s": 0.0004
         },
         {
           "task_id": "T041",
@@ -907,7 +918,7 @@
           "output_tokens": 188,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.039867,
-          "wall_clock_s": 0.0003
+          "wall_clock_s": 0.0004
         },
         {
           "task_id": "T043",
@@ -947,7 +958,7 @@
           "output_tokens": 196,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.039969,
-          "wall_clock_s": 0.0004
+          "wall_clock_s": 0.0003
         },
         {
           "task_id": "T045",
@@ -967,7 +978,7 @@
           "output_tokens": 182,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.039195,
-          "wall_clock_s": 0.0003
+          "wall_clock_s": 0.0004
         },
         {
           "task_id": "T046",
@@ -987,7 +998,7 @@
           "output_tokens": 197,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.040002,
-          "wall_clock_s": 0.0003
+          "wall_clock_s": 0.0005
         },
         {
           "task_id": "T047",
@@ -1007,7 +1018,7 @@
           "output_tokens": 197,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.040002,
-          "wall_clock_s": 0.0003
+          "wall_clock_s": 0.0004
         },
         {
           "task_id": "T048",
@@ -1027,7 +1038,7 @@
           "output_tokens": 268,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.0507,
-          "wall_clock_s": 0.0005
+          "wall_clock_s": 0.0006
         },
         {
           "task_id": "T049",
@@ -1047,7 +1058,7 @@
           "output_tokens": 199,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.040086,
-          "wall_clock_s": 0.0003
+          "wall_clock_s": 0.0004
         },
         {
           "task_id": "T050",
@@ -1067,7 +1078,7 @@
           "output_tokens": 293,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.060966,
-          "wall_clock_s": 0.0009
+          "wall_clock_s": 0.001
         },
         {
           "task_id": "T051",
@@ -1127,7 +1138,7 @@
           "output_tokens": 182,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.039237,
-          "wall_clock_s": 0.0003
+          "wall_clock_s": 0.0004
         },
         {
           "task_id": "T054",
@@ -1147,7 +1158,7 @@
           "output_tokens": 196,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.039972,
-          "wall_clock_s": 0.0004
+          "wall_clock_s": 0.0003
         },
         {
           "task_id": "T055",
@@ -1167,7 +1178,7 @@
           "output_tokens": 189,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.039873,
-          "wall_clock_s": 0.0004
+          "wall_clock_s": 0.0003
         },
         {
           "task_id": "T056",
@@ -1187,7 +1198,7 @@
           "output_tokens": 360,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.072303,
-          "wall_clock_s": 0.0009
+          "wall_clock_s": 0.0011
         },
         {
           "task_id": "T057",
@@ -1227,7 +1238,7 @@
           "output_tokens": 182,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.039219,
-          "wall_clock_s": 0.0003
+          "wall_clock_s": 0.0004
         },
         {
           "task_id": "T059",
@@ -1247,7 +1258,7 @@
           "output_tokens": 182,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.039216,
-          "wall_clock_s": 0.0004
+          "wall_clock_s": 0.0005
         },
         {
           "task_id": "T060",
@@ -1267,7 +1278,7 @@
           "output_tokens": 268,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.050706,
-          "wall_clock_s": 0.0005
+          "wall_clock_s": 0.0006
         },
         {
           "task_id": "T061",
@@ -1287,7 +1298,7 @@
           "output_tokens": 292,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.060942,
-          "wall_clock_s": 0.0009
+          "wall_clock_s": 0.001
         },
         {
           "task_id": "T062",
@@ -1307,7 +1318,7 @@
           "output_tokens": 360,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.072225,
-          "wall_clock_s": 0.0011
+          "wall_clock_s": 0.0012
         },
         {
           "task_id": "T063",
@@ -1327,7 +1338,7 @@
           "output_tokens": 360,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.07227,
-          "wall_clock_s": 0.001
+          "wall_clock_s": 0.0012
         },
         {
           "task_id": "T064",
@@ -1347,7 +1358,7 @@
           "output_tokens": 290,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.060879,
-          "wall_clock_s": 0.0009
+          "wall_clock_s": 0.001
         },
         {
           "task_id": "T065",
@@ -1367,7 +1378,7 @@
           "output_tokens": 290,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.060858,
-          "wall_clock_s": 0.0009
+          "wall_clock_s": 0.001
         },
         {
           "task_id": "T066",
@@ -1387,7 +1398,7 @@
           "output_tokens": 267,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.050664,
-          "wall_clock_s": 0.0007
+          "wall_clock_s": 0.0006
         },
         {
           "task_id": "T067",
@@ -1467,7 +1478,7 @@
           "output_tokens": 188,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.039846,
-          "wall_clock_s": 0.0003
+          "wall_clock_s": 0.0004
         }
       ]
     },
@@ -1662,7 +1673,7 @@
           "output_tokens": 134,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.029256,
-          "wall_clock_s": 0.0003
+          "wall_clock_s": 0.0004
         },
         {
           "task_id": "T007",
@@ -1682,7 +1693,7 @@
           "output_tokens": 100,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.019539,
-          "wall_clock_s": 0.0003
+          "wall_clock_s": 0.0002
         },
         {
           "task_id": "T008",
@@ -1822,7 +1833,7 @@
           "output_tokens": 134,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.029253,
-          "wall_clock_s": 0.0002
+          "wall_clock_s": 0.0003
         },
         {
           "task_id": "T015",
@@ -1902,7 +1913,7 @@
           "output_tokens": 134,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.029373,
-          "wall_clock_s": 0.0002
+          "wall_clock_s": 0.0003
         },
         {
           "task_id": "T019",
@@ -1942,7 +1953,7 @@
           "output_tokens": 134,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.029253,
-          "wall_clock_s": 0.0003
+          "wall_clock_s": 0.0004
         },
         {
           "task_id": "T021",
@@ -2002,7 +2013,7 @@
           "output_tokens": 134,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.029259,
-          "wall_clock_s": 0.0003
+          "wall_clock_s": 0.0004
         },
         {
           "task_id": "T024",
@@ -2082,7 +2093,7 @@
           "output_tokens": 134,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.029367,
-          "wall_clock_s": 0.0005
+          "wall_clock_s": 0.0003
         },
         {
           "task_id": "T028",
@@ -2102,7 +2113,7 @@
           "output_tokens": 100,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.019518,
-          "wall_clock_s": 0.0015
+          "wall_clock_s": 0.0002
         },
         {
           "task_id": "T029",
@@ -2142,7 +2153,7 @@
           "output_tokens": 100,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.019521,
-          "wall_clock_s": 0.0002
+          "wall_clock_s": 0.0003
         },
         {
           "task_id": "T031",
@@ -2202,7 +2213,7 @@
           "output_tokens": 67,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.028083,
-          "wall_clock_s": 0.0002
+          "wall_clock_s": 0.0003
         },
         {
           "task_id": "T034",
@@ -2222,7 +2233,7 @@
           "output_tokens": 134,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.02925,
-          "wall_clock_s": 0.0002
+          "wall_clock_s": 0.0004
         },
         {
           "task_id": "T035",
@@ -2262,7 +2273,7 @@
           "output_tokens": 134,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.029274,
-          "wall_clock_s": 0.0002
+          "wall_clock_s": 0.0003
         },
         {
           "task_id": "T037",
@@ -2402,7 +2413,7 @@
           "output_tokens": 134,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.029298,
-          "wall_clock_s": 0.0003
+          "wall_clock_s": 0.0004
         },
         {
           "task_id": "T044",
@@ -2542,7 +2553,7 @@
           "output_tokens": 134,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.02928,
-          "wall_clock_s": 0.0002
+          "wall_clock_s": 0.0003
         },
         {
           "task_id": "T051",
@@ -2562,7 +2573,7 @@
           "output_tokens": 67,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.028095,
-          "wall_clock_s": 0.0003
+          "wall_clock_s": 0.0004
         },
         {
           "task_id": "T052",
@@ -2622,7 +2633,7 @@
           "output_tokens": 100,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.019527,
-          "wall_clock_s": 0.0001
+          "wall_clock_s": 0.0002
         },
         {
           "task_id": "T055",
@@ -2702,7 +2713,7 @@
           "output_tokens": 67,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.028089,
-          "wall_clock_s": 0.0002
+          "wall_clock_s": 0.0004
         },
         {
           "task_id": "T059",
@@ -2722,7 +2733,7 @@
           "output_tokens": 67,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.028086,
-          "wall_clock_s": 0.0002
+          "wall_clock_s": 0.0004
         },
         {
           "task_id": "T060",
@@ -2742,7 +2753,7 @@
           "output_tokens": 134,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.029385,
-          "wall_clock_s": 0.0002
+          "wall_clock_s": 0.0003
         },
         {
           "task_id": "T061",
@@ -2762,7 +2773,7 @@
           "output_tokens": 134,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.029277,
-          "wall_clock_s": 0.0002
+          "wall_clock_s": 0.0003
         },
         {
           "task_id": "T062",
@@ -2782,7 +2793,7 @@
           "output_tokens": 134,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.029265,
-          "wall_clock_s": 0.0002
+          "wall_clock_s": 0.0003
         },
         {
           "task_id": "T063",
@@ -2822,7 +2833,7 @@
           "output_tokens": 134,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.029268,
-          "wall_clock_s": 0.0003
+          "wall_clock_s": 0.0005
         },
         {
           "task_id": "T065",
@@ -2842,7 +2853,7 @@
           "output_tokens": 134,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.029259,
-          "wall_clock_s": 0.0002
+          "wall_clock_s": 0.0003
         },
         {
           "task_id": "T066",
@@ -2902,7 +2913,7 @@
           "output_tokens": 100,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.019524,
-          "wall_clock_s": 0.0002
+          "wall_clock_s": 0.0003
         },
         {
           "task_id": "T069",
@@ -2963,7 +2974,7 @@
         "mean_steps": 4.64,
         "mean_tool_errors": 0.13,
         "mean_retries": 0.27,
-        "mean_latency_s": 0.015,
+        "mean_latency_s": 0.0152,
         "cost_usd_per_task": 0.0,
         "projected_cost_usd_per_task": 0.046739,
         "mean_input_tokens": 14439,
@@ -3054,7 +3065,7 @@
           "output_tokens": 134,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.029511,
-          "wall_clock_s": 0.0506
+          "wall_clock_s": 0.0509
         },
         {
           "task_id": "T003",
@@ -3074,7 +3085,7 @@
           "output_tokens": 187,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.039837,
-          "wall_clock_s": 0.0003
+          "wall_clock_s": 0.0004
         },
         {
           "task_id": "T004",
@@ -3094,7 +3105,7 @@
           "output_tokens": 200,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.040092,
-          "wall_clock_s": 0.0003
+          "wall_clock_s": 0.0004
         },
         {
           "task_id": "T005",
@@ -3114,7 +3125,7 @@
           "output_tokens": 189,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.039879,
-          "wall_clock_s": 0.0003
+          "wall_clock_s": 0.0004
         },
         {
           "task_id": "T006",
@@ -3194,7 +3205,7 @@
           "output_tokens": 198,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.040062,
-          "wall_clock_s": 0.0507
+          "wall_clock_s": 0.0512
         },
         {
           "task_id": "T010",
@@ -3214,7 +3225,7 @@
           "output_tokens": 360,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.072279,
-          "wall_clock_s": 0.0519
+          "wall_clock_s": 0.052
         },
         {
           "task_id": "T011",
@@ -3234,7 +3245,7 @@
           "output_tokens": 361,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.072327,
-          "wall_clock_s": 0.0516
+          "wall_clock_s": 0.0523
         },
         {
           "task_id": "T012",
@@ -3254,7 +3265,7 @@
           "output_tokens": 189,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.039873,
-          "wall_clock_s": 0.0004
+          "wall_clock_s": 0.0005
         },
         {
           "task_id": "T013",
@@ -3274,7 +3285,7 @@
           "output_tokens": 198,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.040074,
-          "wall_clock_s": 0.0003
+          "wall_clock_s": 0.0004
         },
         {
           "task_id": "T014",
@@ -3294,7 +3305,7 @@
           "output_tokens": 290,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.060843,
-          "wall_clock_s": 0.001
+          "wall_clock_s": 0.0011
         },
         {
           "task_id": "T015",
@@ -3314,7 +3325,7 @@
           "output_tokens": 199,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.040068,
-          "wall_clock_s": 0.0003
+          "wall_clock_s": 0.0004
         },
         {
           "task_id": "T016",
@@ -3334,7 +3345,7 @@
           "output_tokens": 290,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.060858,
-          "wall_clock_s": 0.0009
+          "wall_clock_s": 0.0011
         },
         {
           "task_id": "T017",
@@ -3354,7 +3365,7 @@
           "output_tokens": 197,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.040002,
-          "wall_clock_s": 0.151
+          "wall_clock_s": 0.1515
         },
         {
           "task_id": "T018",
@@ -3394,7 +3405,7 @@
           "output_tokens": 197,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.040023,
-          "wall_clock_s": 0.0005
+          "wall_clock_s": 0.0006
         },
         {
           "task_id": "T020",
@@ -3414,7 +3425,7 @@
           "output_tokens": 289,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.060822,
-          "wall_clock_s": 0.001
+          "wall_clock_s": 0.0012
         },
         {
           "task_id": "T021",
@@ -3454,7 +3465,7 @@
           "output_tokens": 267,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.050664,
-          "wall_clock_s": 0.0006
+          "wall_clock_s": 0.0007
         },
         {
           "task_id": "T023",
@@ -3474,7 +3485,7 @@
           "output_tokens": 257,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.050304,
-          "wall_clock_s": 0.0508
+          "wall_clock_s": 0.051
         },
         {
           "task_id": "T024",
@@ -3494,7 +3505,7 @@
           "output_tokens": 182,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.039195,
-          "wall_clock_s": 0.0004
+          "wall_clock_s": 0.0006
         },
         {
           "task_id": "T025",
@@ -3514,7 +3525,7 @@
           "output_tokens": 134,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.029505,
-          "wall_clock_s": 0.0003
+          "wall_clock_s": 0.0004
         },
         {
           "task_id": "T026",
@@ -3534,7 +3545,7 @@
           "output_tokens": 188,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.039858,
-          "wall_clock_s": 0.0004
+          "wall_clock_s": 0.0005
         },
         {
           "task_id": "T027",
@@ -3554,7 +3565,7 @@
           "output_tokens": 266,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.050628,
-          "wall_clock_s": 0.0509
+          "wall_clock_s": 0.0514
         },
         {
           "task_id": "T028",
@@ -3574,7 +3585,7 @@
           "output_tokens": 187,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.03981,
-          "wall_clock_s": 0.0508
+          "wall_clock_s": 0.051
         },
         {
           "task_id": "T029",
@@ -3594,7 +3605,7 @@
           "output_tokens": 359,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.072249,
-          "wall_clock_s": 0.0014
+          "wall_clock_s": 0.0022
         },
         {
           "task_id": "T030",
@@ -3634,7 +3645,7 @@
           "output_tokens": 189,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.039876,
-          "wall_clock_s": 0.0005
+          "wall_clock_s": 0.0004
         },
         {
           "task_id": "T032",
@@ -3654,7 +3665,7 @@
           "output_tokens": 268,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.0507,
-          "wall_clock_s": 0.0005
+          "wall_clock_s": 0.0007
         },
         {
           "task_id": "T033",
@@ -3694,7 +3705,7 @@
           "output_tokens": 256,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.050265,
-          "wall_clock_s": 0.0004
+          "wall_clock_s": 0.0005
         },
         {
           "task_id": "T035",
@@ -3714,7 +3725,7 @@
           "output_tokens": 179,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.03975,
-          "wall_clock_s": 0.0003
+          "wall_clock_s": 0.0004
         },
         {
           "task_id": "T036",
@@ -3734,7 +3745,7 @@
           "output_tokens": 360,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.07227,
-          "wall_clock_s": 0.0517
+          "wall_clock_s": 0.052
         },
         {
           "task_id": "T037",
@@ -3754,7 +3765,7 @@
           "output_tokens": 188,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.039846,
-          "wall_clock_s": 0.0003
+          "wall_clock_s": 0.0006
         },
         {
           "task_id": "T038",
@@ -3774,7 +3785,7 @@
           "output_tokens": 189,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.039885,
-          "wall_clock_s": 0.0507
+          "wall_clock_s": 0.051
         },
         {
           "task_id": "T039",
@@ -3794,7 +3805,7 @@
           "output_tokens": 290,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.06087,
-          "wall_clock_s": 0.0009
+          "wall_clock_s": 0.0013
         },
         {
           "task_id": "T040",
@@ -3814,7 +3825,7 @@
           "output_tokens": 199,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.040086,
-          "wall_clock_s": 0.0003
+          "wall_clock_s": 0.0004
         },
         {
           "task_id": "T041",
@@ -3834,7 +3845,7 @@
           "output_tokens": 197,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.039996,
-          "wall_clock_s": 0.0003
+          "wall_clock_s": 0.0004
         },
         {
           "task_id": "T042",
@@ -3854,7 +3865,7 @@
           "output_tokens": 188,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.039867,
-          "wall_clock_s": 0.0003
+          "wall_clock_s": 0.0004
         },
         {
           "task_id": "T043",
@@ -3874,7 +3885,7 @@
           "output_tokens": 363,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.072426,
-          "wall_clock_s": 0.0011
+          "wall_clock_s": 0.0013
         },
         {
           "task_id": "T044",
@@ -3934,7 +3945,7 @@
           "output_tokens": 197,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.040002,
-          "wall_clock_s": 0.0508
+          "wall_clock_s": 0.0512
         },
         {
           "task_id": "T047",
@@ -3954,7 +3965,7 @@
           "output_tokens": 197,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.040002,
-          "wall_clock_s": 0.0006
+          "wall_clock_s": 0.0005
         },
         {
           "task_id": "T048",
@@ -3974,7 +3985,7 @@
           "output_tokens": 268,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.0507,
-          "wall_clock_s": 0.0007
+          "wall_clock_s": 0.0009
         },
         {
           "task_id": "T049",
@@ -3994,7 +4005,7 @@
           "output_tokens": 199,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.040086,
-          "wall_clock_s": 0.0004
+          "wall_clock_s": 0.0005
         },
         {
           "task_id": "T050",
@@ -4014,7 +4025,7 @@
           "output_tokens": 293,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.060966,
-          "wall_clock_s": 0.1019
+          "wall_clock_s": 0.1065
         },
         {
           "task_id": "T051",
@@ -4034,7 +4045,7 @@
           "output_tokens": 182,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.039228,
-          "wall_clock_s": 0.0004
+          "wall_clock_s": 0.0005
         },
         {
           "task_id": "T052",
@@ -4054,7 +4065,7 @@
           "output_tokens": 134,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.029499,
-          "wall_clock_s": 0.0004
+          "wall_clock_s": 0.0003
         },
         {
           "task_id": "T053",
@@ -4074,7 +4085,7 @@
           "output_tokens": 182,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.039237,
-          "wall_clock_s": 0.0507
+          "wall_clock_s": 0.0511
         },
         {
           "task_id": "T054",
@@ -4114,7 +4125,7 @@
           "output_tokens": 189,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.039873,
-          "wall_clock_s": 0.0004
+          "wall_clock_s": 0.0006
         },
         {
           "task_id": "T056",
@@ -4134,7 +4145,7 @@
           "output_tokens": 134,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.029199,
-          "wall_clock_s": 0.0002
+          "wall_clock_s": 0.0004
         },
         {
           "task_id": "T057",
@@ -4154,7 +4165,7 @@
           "output_tokens": 198,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.040062,
-          "wall_clock_s": 0.0003
+          "wall_clock_s": 0.0005
         },
         {
           "task_id": "T058",
@@ -4174,7 +4185,7 @@
           "output_tokens": 182,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.039219,
-          "wall_clock_s": 0.0003
+          "wall_clock_s": 0.0004
         },
         {
           "task_id": "T059",
@@ -4194,7 +4205,7 @@
           "output_tokens": 182,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.039216,
-          "wall_clock_s": 0.0003
+          "wall_clock_s": 0.0005
         },
         {
           "task_id": "T060",
@@ -4214,7 +4225,7 @@
           "output_tokens": 268,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.050706,
-          "wall_clock_s": 0.1016
+          "wall_clock_s": 0.1018
         },
         {
           "task_id": "T061",
@@ -4234,7 +4245,7 @@
           "output_tokens": 292,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.060942,
-          "wall_clock_s": 0.0011
+          "wall_clock_s": 0.0012
         },
         {
           "task_id": "T062",
@@ -4254,7 +4265,7 @@
           "output_tokens": 360,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.072225,
-          "wall_clock_s": 0.0522
+          "wall_clock_s": 0.0529
         },
         {
           "task_id": "T063",
@@ -4294,7 +4305,7 @@
           "output_tokens": 290,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.060879,
-          "wall_clock_s": 0.0008
+          "wall_clock_s": 0.001
         },
         {
           "task_id": "T065",
@@ -4314,7 +4325,7 @@
           "output_tokens": 290,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.060858,
-          "wall_clock_s": 0.0009
+          "wall_clock_s": 0.0011
         },
         {
           "task_id": "T066",
@@ -4334,7 +4345,7 @@
           "output_tokens": 267,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.050664,
-          "wall_clock_s": 0.0005
+          "wall_clock_s": 0.0006
         },
         {
           "task_id": "T067",
@@ -4354,7 +4365,7 @@
           "output_tokens": 268,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.050682,
-          "wall_clock_s": 0.0008
+          "wall_clock_s": 0.0006
         },
         {
           "task_id": "T068",
@@ -4394,7 +4405,7 @@
           "output_tokens": 182,
           "cost_usd": 0.0,
           "projected_cost_usd": 0.039219,
-          "wall_clock_s": 0.0005
+          "wall_clock_s": 0.0004
         },
         {
           "task_id": "T070",

@@ -500,15 +500,22 @@ Gate thresholds (`evaluation/harness.py`, enforced by `scripts/run_agent_eval.py
 
 ### Where the money actually goes
 
-92.6% of input tokens are the same 2,881-token prefix — 2,425 tokens of tool
-schemas plus a 456-token system prompt — re-sent on each of ~4.8 turns.
-Nothing about the loop choice changes that; it is a property of a 12-tool
-surface and a short episode.
+Roughly 93% of input tokens are the same ~2,900-token prefix — the tool
+schemas plus the system prompt — re-sent on each of ~4.8 turns. Nothing about
+the loop choice changes that; it is a property of a 12-tool surface and a
+short episode.
 
 | | Per task | Per 10k exceptions/month |
 |---|---|---|
-| As implemented | $0.0482 | $482 |
-| With prompt caching on the fixed prefix | ~$0.0209 | ~$209 |
+| As implemented | ~$0.05 | ~$500 |
+| With prompt caching on the fixed prefix | ~$0.02 | ~$210 |
+
+Exact figures, and the token counter that produced them, are in the **Cost
+basis** table of [`eval/agent/report.md`](eval/agent/report.md) — regenerated
+on every run rather than transcribed here. They move a few percent with the
+counter: `budget.py` uses tiktoken when its encoding is available and falls
+back to a ~4-chars-per-token estimate when the network is not, so a sandboxed
+run and a CI run disagree slightly. The report names which one it used.
 
 The second-largest lever is that episodes deliberately do not share context: an
 exception is a unit of work with its own budget, and letting turn history
@@ -526,7 +533,7 @@ built out of what the pydantic-ai version actually cost:
   exception handler.
 - `UsageLimits` covers **three of the seven bounds**; wall clock, tool-error
   budget and identical-call detection have no equivalent.
-- When a limit fires it **raises**, so `framework.py` imports `_safety_net`
+- When a limit fires it **raises**, so `framework.py` imports `escalate_as_safety_net`
   back out of the hand-rolled loop to keep invariant #1.
 
 The framework is not worse — it is aimed at streaming, multi-provider,
@@ -616,4 +623,6 @@ docs/               AGENT_SDK_TRADEOFFS.md
   happens: a tool added to the registry and silently missing from one consumer.
 - **Cost figures are projections**, priced from the table in `budget.py` at
   token volumes measured offline. Real runs will differ on output tokens, which
-  the offline policies can only estimate.
+  the offline policies can only estimate — and on input tokens, which depend on
+  whether tiktoken's encoding downloaded. The eval report states which counter
+  it used; treat a figure quoted without one as approximate.

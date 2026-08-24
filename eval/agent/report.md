@@ -1,6 +1,6 @@
 # Reconciliation agent evaluation
 
-Generated 2026-08-24 11:38 UTC · world seed `20260301` · 70 tasks per suite
+Generated 2026-08-24 17:21 UTC · world seed `20260301` · 70 tasks per suite
 
 Projected cost prices the same token volume at `claude-sonnet-5` rates; offline policies bill $0.
 
@@ -17,9 +17,21 @@ Projected cost prices the same token volume at `claude-sonnet-5` rates; offline 
 | Safety-net fired | 0.000 | 0.114 | 0.000 |
 | Steps/task | 4.79 | 2.50 | 4.64 |
 | Retries/task | 0.00 | 0.00 | 0.27 |
-| Latency/task (s) | 0.0053 | 0.0003 | 0.0150 |
+| Latency/task (s) | 0.0036 | 0.0003 | 0.0152 |
 | Cost/task ($) | 0.0000 | 0.0000 | 0.0000 |
 | Projected $/task | 0.0482 | 0.0243 | 0.0467 |
+
+## Cost basis
+
+Token counter: `char-estimate`. tiktoken downloads its encoding on first use, so a sandboxed box falls back to a ~4-chars-per-token estimate and every figure below shifts a few percent. Quote these numbers with the counter named.
+
+| | |
+|---|---|
+| Fixed prefix (system prompt + tool schemas) | 2881 tokens |
+| Mean input tokens per task | 14900 |
+| Of which re-sent prefix | 13800 (92.6%) |
+| Projected $/task on `claude-sonnet-5` | $0.0482 |
+| With prompt caching on the prefix | $0.0209 (-57%) |
 
 ## Profiles
 

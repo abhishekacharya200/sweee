@@ -40,6 +40,16 @@ def _schema_tokens() -> int:
     return _TOOL_SCHEMA_TOKENS
 
 
+def fixed_prefix_tokens() -> int:
+    """System prompt plus tool schemas: the part of every request that repeats.
+
+    Without prompt caching this is paid once per turn, per episode, forever.
+    """
+    from .prompts import SYSTEM_PROMPT
+
+    return count_tokens(SYSTEM_PROMPT) + _schema_tokens()
+
+
 class Policy(Protocol):
     name: str
     model: str

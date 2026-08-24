@@ -19,7 +19,7 @@ from dataclasses import dataclass, field
 from ..agent.loop import run_episode
 from ..agent.policies import build_policy
 from ..agent.trace import STOP_ABANDONED, AgentRun
-from ..budget import Budget
+from ..budget import Budget, price, tokenizer_name
 from ..config import settings
 from ..store import LedgerStore
 from ..tools.faults import FaultInjector
@@ -177,6 +177,49 @@ class SuiteResult:
 
 def _ratio(numerator: int, denominator: int) -> float:
     return round(numerator / denominator, 4) if denominator else 0.0
+
+
+# Anthropic prompt caching bills a cache write at 1.25x the input rate and a
+# cache read at 0.1x. Kept here rather than worked out in prose so the saving
+# claimed in the docs is recomputed on every run instead of ageing.
+CACHE_WRITE_MULTIPLIER = 1.25
+CACHE_READ_MULTIPLIER = 0.1
+
+
+def cost_basis(suite: SuiteResult, projection_model: str = "claude-sonnet-5") -> dict:
+    """Where the token bill actually goes, and what caching would do to it.
+
+    The system prompt and the tool schemas are re-sent on every turn of every
+    episode. On a 12-tool surface and a ~5-turn episode that fixed prefix is
+    most of the input bill, which makes it a bigger lever than anything about
+    the agent loop.
+    """
+    from ..agent.policies import fixed_prefix_tokens
+
+    metrics = suite.metrics
+    if not metrics:
+        return {}
+    prefix = fixed_prefix_tokens()
+    steps = metrics["mean_steps"]
+    mean_input = metrics["mean_input_tokens"]
+    resent = prefix * steps
+
+    cached_input = mean_input - resent + prefix * (
+        CACHE_WRITE_MULTIPLIER + CACHE_READ_MULTIPLIER * max(0.0, steps - 1)
+    )
+    baseline = price(projection_model, mean_input, metrics["mean_output_tokens"])
+    cached = price(projection_model, round(cached_input), metrics["mean_output_tokens"])
+    return {
+        "tokenizer": tokenizer_name(),
+        "projection_model": projection_model,
+        "fixed_prefix_tokens": prefix,
+        "mean_input_tokens": mean_input,
+        "resent_prefix_tokens": round(resent),
+        "resent_prefix_share": _ratio(round(resent), mean_input),
+        "projected_cost_usd_per_task": round(baseline, 6),
+        "projected_cost_usd_per_task_cached": round(cached, 6),
+        "cache_saving": round(1 - cached / baseline, 4) if baseline else 0.0,
+    }
 
 
 def run_suite(

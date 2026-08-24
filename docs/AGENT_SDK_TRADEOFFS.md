@@ -110,7 +110,7 @@ failure** (the model asked for an invoice that does not exist — it must know).
 Collapsing them means a flaky upstream burns the model's reasoning budget and
 shows up in the transcript as indecision.
 
-The hand-rolled loop separates them explicitly. `_execute_with_retries` retries
+The hand-rolled loop separates them explicitly. `execute_with_retries` retries
 only `retryable` outcomes and never tells the model; everything else comes back
 as a tool result the model has to reason about. Under the chaos profile that
 distinction shows up as **0.27 retries per task that the model never saw**.
@@ -123,7 +123,7 @@ ends with:
 
 ```python
 if guard is not None:
-    _safety_net(registry, exception_id, guard, run, ledger, detail=detail)
+    escalate_as_safety_net(registry, exception_id, guard, run, ledger, detail=detail)
 ```
 
 — importing the safety net back out of the hand-rolled loop. The framework
@@ -165,13 +165,18 @@ Measured on the shipped 70-task queue, projected at `claude-sonnet-5` rates:
 
 | | Per task | Per 10k exceptions/month |
 |---|---|---|
-| Naive implementation (schemas re-sent every turn) | $0.0482 | $482 |
-| With prompt caching on the fixed prefix | ~$0.0209 | ~$209 |
+| Naive implementation (schemas re-sent every turn) | ~$0.05 | ~$500 |
+| With prompt caching on the fixed prefix | ~$0.02 | ~$210 |
 
-**92.6% of input tokens are the same 2,881-token prefix** — 2,425 tokens of
-tool schemas plus a 456-token system prompt — re-sent on each of ~4.8 turns.
-Nothing about the loop choice changes that number; it is a property of a
-12-tool surface and a short episode. The single highest-leverage cost decision
+**Roughly 93% of input tokens are the same ~2,900-token prefix** — the tool
+schemas plus the system prompt — re-sent on each of ~4.8 turns. Nothing about
+the loop choice changes that number; it is a property of a 12-tool surface and
+a short episode.
+
+(Exact values, and the token counter behind them, are in the Cost basis table
+of the generated eval report. They shift a few percent depending on whether
+tiktoken's encoding was reachable, which is why the report names the counter
+and this document rounds.) The single highest-leverage cost decision
 in this system is caching that prefix, and the second is **not** letting
 context accumulate across the queue:
 
@@ -260,7 +265,7 @@ None of those are true today, so the loop stays.
 
 | Requirement | Hand-rolled | pydantic-ai as shipped |
 |---|---|---|
-| Ends in exactly one terminal write | structural | bolt-on (`_safety_net` reimported) |
+| Ends in exactly one terminal write | structural | bolt-on (`escalate_as_safety_net` reimported) |
 | Terminal tool ends the run | native | via raised exception |
 | All seven bounds enforced | yes | three of seven |
 | Transport retries hidden from the model | yes | merged into `ModelRetry` |

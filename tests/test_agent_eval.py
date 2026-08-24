@@ -169,3 +169,25 @@ def test_unknown_profiles_are_rejected():
     with pytest.raises(ValueError):
         run_suite("rules", profile="hurricane")
     assert set(PROFILES) == {"clean", "chaos"}
+
+
+def test_the_cost_basis_names_its_counter_and_adds_up(rules_suite):
+    """A cost number without its estimator named is a number nobody can check."""
+    from reconagent.budget import BPE_ENCODING, CHAR_ESTIMATE
+    from reconagent.evaluation import cost_basis
+
+    basis = cost_basis(rules_suite)
+    assert basis["tokenizer"] in {BPE_ENCODING, CHAR_ESTIMATE}
+    assert 0 < basis["fixed_prefix_tokens"] < basis["mean_input_tokens"]
+    assert basis["resent_prefix_tokens"] <= basis["mean_input_tokens"]
+    assert 0.0 < basis["resent_prefix_share"] <= 1.0
+    assert basis["projected_cost_usd_per_task_cached"] < basis["projected_cost_usd_per_task"]
+    assert 0.0 < basis["cache_saving"] < 1.0
+
+
+def test_the_report_states_which_counter_produced_its_numbers(rules_suite):
+    from reconagent.evaluation import render_markdown
+
+    markdown = render_markdown([rules_suite])
+    assert "## Cost basis" in markdown
+    assert "Token counter:" in markdown

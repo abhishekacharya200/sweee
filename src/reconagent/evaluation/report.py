@@ -12,7 +12,7 @@ import json
 from datetime import UTC, datetime
 
 from ..world import ARCHETYPES
-from .harness import PROFILES, SuiteResult
+from .harness import PROFILES, SuiteResult, cost_basis
 
 _HEADLINE = [
     ("task_success", "Task success", ".3f"),
@@ -61,6 +61,38 @@ def render_markdown(suites: list[SuiteResult], projection_model: str = "claude-s
     for key, label, spec in _HEADLINE:
         row = [_fmt(s.metrics.get(key, 0), spec) for s in suites]
         lines.append(f"| {label} | " + " | ".join(row) + " |")
+
+    basis = cost_basis(suites[0], projection_model)
+    if basis:
+        lines += [
+            "",
+            "## Cost basis",
+            "",
+            (
+                f"Token counter: `{basis['tokenizer']}`. tiktoken downloads its encoding on "
+                "first use, so a sandboxed box falls back to a ~4-chars-per-token estimate and "
+                "every figure below shifts a few percent. Quote these numbers with the counter "
+                "named."
+            ),
+            "",
+            "| | |",
+            "|---|---|",
+            f"| Fixed prefix (system prompt + tool schemas) | {basis['fixed_prefix_tokens']} tokens |",
+            f"| Mean input tokens per task | {basis['mean_input_tokens']} |",
+            (
+                f"| Of which re-sent prefix | {basis['resent_prefix_tokens']} "
+                f"({basis['resent_prefix_share']:.1%}) |"
+            ),
+            (
+                f"| Projected $/task on `{basis['projection_model']}` | "
+                f"${basis['projected_cost_usd_per_task']:.4f} |"
+            ),
+            (
+                "| With prompt caching on the prefix | "
+                f"${basis['projected_cost_usd_per_task_cached']:.4f} "
+                f"(-{basis['cache_saving']:.0%}) |"
+            ),
+        ]
 
     lines += ["", "## Profiles", ""]
     for name in dict.fromkeys(s.profile for s in suites):
@@ -117,6 +149,7 @@ def render_json(suites: list[SuiteResult]) -> str:
     return json.dumps(
         {
             "generated_at": datetime.now(UTC).isoformat(),
+            "cost_basis": cost_basis(suites[0]) if suites else {},
             "suites": [suite.to_dict() for suite in suites],
         },
         indent=2,

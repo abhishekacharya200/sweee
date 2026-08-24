@@ -27,18 +27,36 @@ _encoding = None
 _encoding_unavailable = False
 
 
+CHAR_ESTIMATE = "char-estimate"
+BPE_ENCODING = "cl100k_base"
+
+
 def count_tokens(text: str) -> int:
     global _encoding, _encoding_unavailable
     if not _encoding_unavailable and _encoding is None:
         try:
             import tiktoken
 
-            _encoding = tiktoken.get_encoding("cl100k_base")
+            _encoding = tiktoken.get_encoding(BPE_ENCODING)
         except Exception:  # noqa: BLE001 - any failure means "use the char estimate"
             _encoding_unavailable = True
     if _encoding is not None:
         return len(_encoding.encode(text))
     return max(1, round(len(text) / 4))
+
+
+def tokenizer_name() -> str:
+    """Which counter produced the numbers in this run.
+
+    tiktoken fetches its encoding over the network on first use, so an
+    air-gapped or proxied box silently falls back to ~4 chars per token. The
+    fallback is the right behaviour — cost accounting should not be a hard
+    dependency on an outbound request — but a cost report that does not say
+    which estimator it used invites someone to quote an approximation as a
+    measurement. Ask before citing a number.
+    """
+    count_tokens("warm the encoder")
+    return CHAR_ESTIMATE if _encoding is None else BPE_ENCODING
 
 
 def price(model: str, input_tokens: int, output_tokens: int) -> float:

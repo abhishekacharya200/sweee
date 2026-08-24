@@ -15,7 +15,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
 from reconagent.config import settings
-from reconagent.evaluation import gate, render_json, render_markdown, run_suite
+from reconagent.evaluation import cost_basis, gate, render_json, render_markdown, run_suite
 from reconagent.evaluation.harness import DEFAULT_GATE_THRESHOLDS
 
 # Only the primary suite gates the build. The naive baseline is expected to
@@ -63,6 +63,17 @@ def main() -> int:
             f"esc-recall {metrics['escalation_recall']:.3f}  "
             f"steps {metrics['mean_steps']:.2f}  "
             f"proj ${metrics['projected_cost_usd_per_task']:.4f}/task"
+        )
+
+    basis = cost_basis(suites[0], settings.anthropic_model)
+    if basis:
+        print(
+            f"\n  cost basis (counter {basis['tokenizer']}): "
+            f"{basis['fixed_prefix_tokens']} token prefix, "
+            f"{basis['resent_prefix_share']:.1%} of {basis['mean_input_tokens']} input tokens/task "
+            f"is re-sent prefix; ${basis['projected_cost_usd_per_task']:.4f}/task, "
+            f"${basis['projected_cost_usd_per_task_cached']:.4f} cached "
+            f"(-{basis['cache_saving']:.0%})"
         )
 
     gated = next(
