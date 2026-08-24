@@ -1,0 +1,33 @@
+services:
+  api:
+    build:
+      context: .
+      target: api
+    ports:
+      - "8000:8000"
+    environment:
+      - LLM_PROVIDER=${LLM_PROVIDER:-mock}
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY:-}
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+      - EMBEDDING_BACKEND=${EMBEDDING_BACKEND:-local}
+      - RERANK_BACKEND=${RERANK_BACKEND:-lexical}
+    volumes:
+      - index-data:/app/data/index
+
+  ui:
+    build:
+      context: .
+      target: ui
+    ports:
+      - "8501:8501"
+    environment:
+      - LLM_PROVIDER=${LLM_PROVIDER:-mock}
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY:-}
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+      - EMBEDDING_BACKEND=${EMBEDDING_BACKEND:-local}
+      - RERANK_BACKEND=${RERANK_BACKEND:-lexical}
+    volumes:
+      - index-data:/app/data/index
+
+volumes:
+  index-data:

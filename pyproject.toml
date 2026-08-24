@@ -1,0 +1,42 @@
+[project]
+name = "ragcite"
+version = "0.1.0"
+description = "Citation-grounded RAG over a regulated document corpus"
+requires-python = ">=3.10"
+readme = "README.md"
+license = { text = "MIT" }
+dependencies = [
+    "pypdf>=4.2.0",
+    "python-docx>=1.1.0",
+    "reportlab>=4.1.0",
+    "rank-bm25>=0.2.2",
+    "scikit-learn>=1.4.0",
+    "numpy>=1.26.0",
+    "fastapi>=0.111.0",
+    "uvicorn[standard]>=0.29.0",
+    "streamlit>=1.35.0",
+    "pydantic>=2.7.0",
+    "python-dotenv>=1.0.1",
+    "tiktoken>=0.7.0",
+    "requests>=2.31.0",
+]
+
+[project.optional-dependencies]
+llm = ["anthropic>=0.28.0", "openai>=1.30.0"]
+embeddings = ["sentence-transformers>=2.7.0"]
+dev = ["pytest>=8.2.0", "pytest-cov>=5.0.0", "ruff>=0.4.4"]
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

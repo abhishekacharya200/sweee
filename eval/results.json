@@ -1,0 +1,1629 @@
+{
+  "summary": {
+    "n_questions": 67,
+    "faithfulness": 0.8596131142998598,
+    "answer_relevancy": 0.4291183812513042,
+    "context_precision": 0.2,
+    "context_recall": 1.0,
+    "citation_accuracy": 0.9129353233830846,
+    "keyword_recall": 0.9378109452736318,
+    "grounded_rate": 1.0,
+    "total_cost_usd": 0.0,
+    "avg_cost_usd": 0.0,
+    "avg_latency_s": 0.00782356392538708,
+    "p95_latency_s": 0.003851437200046348,
+    "wall_clock_s": 0.783310426000071,
+    "provider": "mock",
+    "model": "extractive-v1"
+  },
+  "scores": [
+    {
+      "id": "diab-01",
+      "question": "At what age should asymptomatic adults begin routine screening for type 2 diabetes, and how often?",
+      "answer": "A dilated eye examination for diabetic retinopathy should occur within five years of diagnosis for type 1 diabetes and at the time of diagnosis for type 2 diabetes, then at least every two years thereafter if no retinopathy is found. [1] Adults aged 35 years or older without symptoms of hyperglycemia should be screened for type 2 diabetes at least every 3 years using fasting plasma glucose, HbA1c, or a 75-gram oral glucose tolerance test. [2]",
+      "faithfulness": 1.0000000000000007,
+      "answer_relevancy": 0.18128358908719783,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "citation_accuracy": 0.5,
+      "keyword_recall": 1.0,
+      "grounded": true,
+      "cost_usd": 0.0,
+      "latency_s": 0.29799552099984794,
+      "retrieved_chunk_ids": [
+        "clinical_guideline_diabetes-008-0c27c2d180",
+        "clinical_guideline_diabetes-001-db35e5cd12",
+        "clinical_guideline_diabetes-012-982b38da13",
+        "clinical_guideline_diabetes-007-8802035f52",
+        "clinical_guideline_diabetes-011-7f00a3ea41"
+      ],
+      "relevant_chunk_ids": [
+        "clinical_guideline_diabetes-001-db35e5cd12"
+      ]
+    },
+    {
+      "id": "diab-02",
+      "question": "Which HbA1c threshold confirms a diagnosis of diabetes?",
+      "answer": "A dilated eye examination for diabetic retinopathy should occur within five years of diagnosis for type 1 diabetes and at the time of diagnosis for type 2 diabetes, then at least every two years thereafter if no retinopathy is found. [1] A diagnosis of diabetes is confirmed by an HbA1c of 6.5% or greater, a fasting plasma glucose of 126 mg/dL or greater, or a 2-hour plasma glucose of 200 mg/dL or greater during an oral glucose tolerance test. [2]",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.2332121733204296,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "citation_accuracy": 0.5,
+      "keyword_recall": 1.0,
+      "grounded": true,
+      "cost_usd": 0.0,
+      "latency_s": 0.004038684000079229,
+      "retrieved_chunk_ids": [
+        "clinical_guideline_diabetes-008-0c27c2d180",
+        "clinical_guideline_diabetes-002-19bfb0f2cb",
+        "clinical_guideline_diabetes-011-7f00a3ea41",
+        "clinical_guideline_diabetes-006-6bbc29a59b",
+        "clinical_guideline_diabetes-001-db35e5cd12"
+      ],
+      "relevant_chunk_ids": [
+        "clinical_guideline_diabetes-002-19bfb0f2cb"
+      ]
+    },
+    {
+      "id": "diab-03",
+      "question": "At what BMI should adults with an additional risk factor be screened for diabetes regardless of age?",
+      "answer": "Individuals with a body mass index of 25 kg/m2 or higher who have one additional risk factor, such as a first-degree relative with diabetes or a history of gestational diabetes, should be screened at any age. [1]",
+      "faithfulness": 1.0000000000000002,
+      "answer_relevancy": 0.3544462261236203,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "citation_accuracy": 1.0,
+      "keyword_recall": 0.6666666666666666,
+      "grounded": true,
+      "cost_usd": 0.0,
+      "latency_s": 0.0037754820000373,
+      "retrieved_chunk_ids": [
+        "clinical_guideline_diabetes-003-65ed793c2b",
+        "clinical_guideline_diabetes-001-db35e5cd12",
+        "clinical_guideline_diabetes-010-1be0f963a0",
+        "clinical_guideline_diabetes-012-982b38da13",
+        "financial_reg_capital_adequacy-003-ccf423979b"
+      ],
+      "relevant_chunk_ids": [
+        "clinical_guideline_diabetes-003-65ed793c2b"
+      ]
+    },
+    {
+      "id": "diab-04",
+      "question": "What is the preferred initial pharmacologic agent for most patients with type 2 diabetes?",
+      "answer": "Metformin remains the preferred initial pharmacologic agent for most patients with type 2 diabetes, started at diagnosis alongside lifestyle intervention unless contraindicated by an estimated glomerular filtration rate below 30 mL/min/1.73m2. [1]",
+      "faithfulness": 1.000000000000001,
+      "answer_relevancy": 0.41532639945116556,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "citation_accuracy": 1.0,
+      "keyword_recall": 1.0,
+      "grounded": true,
+      "cost_usd": 0.0,
+      "latency_s": 0.00346885400017527,
+      "retrieved_chunk_ids": [
+        "clinical_guideline_diabetes-004-38abdf78ce",
+        "clinical_guideline_diabetes-008-0c27c2d180",
+        "clinical_guideline_diabetes-007-8802035f52",
+        "clinical_guideline_diabetes-011-7f00a3ea41",
+        "clinical_guideline_diabetes-006-6bbc29a59b"
+      ],
+      "relevant_chunk_ids": [
+        "clinical_guideline_diabetes-004-38abdf78ce"
+      ]
+    },
+    {
+      "id": "diab-05",
+      "question": "Which drug classes should be added for patients with established atherosclerotic cardiovascular disease, independent of HbA1c?",
+      "answer": "For patients with established atherosclerotic cardiovascular disease, a glucagon-like peptide-1 receptor agonist or a sodium-glucose cotransporter-2 inhibitor with demonstrated cardiovascular benefit should be added independent of HbA1c or metformin use. [1]",
+      "faithfulness": 1.000000000000001,
+      "answer_relevancy": 0.4298687335933996,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "citation_accuracy": 1.0,
+      "keyword_recall": 0.3333333333333333,
+      "grounded": true,
+      "cost_usd": 0.0,
+      "latency_s": 0.003592901000047277,
+      "retrieved_chunk_ids": [
+        "clinical_guideline_diabetes-005-5daa7f8b92",
+        "clinical_guideline_diabetes-007-8802035f52",
+        "clinical_guideline_diabetes-009-495d32318d",
+        "clinical_guideline_diabetes-006-6bbc29a59b",
+        "clinical_guideline_diabetes-012-982b38da13"
+      ],
+      "relevant_chunk_ids": [
+        "clinical_guideline_diabetes-005-5daa7f8b92"
+      ]
+    },
+    {
+      "id": "diab-06",
+      "question": "What is the general HbA1c target for most nonpregnant adults with diabetes?",
+      "answer": "The general HbA1c target for most nonpregnant adults with diabetes is below 7.0%, though a less stringent target of below 8.0% may be appropriate for patients with limited life expectancy or extensive comorbidity. [1]",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.5738168644230471,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "citation_accuracy": 1.0,
+      "keyword_recall": 1.0,
+      "grounded": true,
+      "cost_usd": 0.0,
+      "latency_s": 0.0035376610001094377,
+      "retrieved_chunk_ids": [
+        "clinical_guideline_diabetes-006-6bbc29a59b",
+        "clinical_guideline_diabetes-010-1be0f963a0",
+        "clinical_guideline_diabetes-012-982b38da13",
+        "clinical_guideline_diabetes-009-495d32318d",
+        "clinical_guideline_diabetes-001-db35e5cd12"
+      ],
+      "relevant_chunk_ids": [
+        "clinical_guideline_diabetes-006-6bbc29a59b"
+      ]
+    },
+    {
+      "id": "diab-07",
+      "question": "How often should a comprehensive foot examination be performed for patients with diabetes?",
+      "answer": "Comprehensive foot examinations, including assessment of pulses, sensation, and skin integrity, should be performed at least annually for all patients with diabetes. [1]",
+      "faithfulness": 0.5965784013615338,
+      "answer_relevancy": 0.41507650328714424,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "citation_accuracy": 1.0,
+      "keyword_recall": 1.0,
+      "grounded": true,
+      "cost_usd": 0.0,
+      "latency_s": 0.003397813999981736,
+      "retrieved_chunk_ids": [
+        "clinical_guideline_diabetes-007-8802035f52",
+        "clinical_guideline_diabetes-009-495d32318d",
+        "clinical_guideline_diabetes-008-0c27c2d180",
+        "clinical_guideline_diabetes-012-982b38da13",
+        "clinical_guideline_diabetes-011-7f00a3ea41"
+      ],
+      "relevant_chunk_ids": [
+        "clinical_guideline_diabetes-007-8802035f52"
+      ]
+    },
+    {
+      "id": "diab-08",
+      "question": "Which two tests screen for diabetic kidney disease and how frequently should they be performed?",
+      "answer": "Urine albumin-to-creatinine ratio and estimated glomerular filtration rate should be assessed at least once per year in all patients with type 2 diabetes to screen for diabetic kidney disease. [1]",
+      "faithfulness": 0.6890269775522094,
+      "answer_relevancy": 0.23304831764702302,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "citation_accuracy": 1.0,
+      "keyword_recall": 0.6666666666666666,
+      "grounded": true,
+      "cost_usd": 0.0,
+      "latency_s": 0.003605750000133412,
+      "retrieved_chunk_ids": [
+        "clinical_guideline_diabetes-007-8802035f52",
+        "clinical_guideline_diabetes-009-495d32318d",
+        "clinical_guideline_diabetes-008-0c27c2d180",
+        "clinical_guideline_diabetes-005-5daa7f8b92",
+        "clinical_guideline_diabetes-012-982b38da13"
+      ],
+      "relevant_chunk_ids": [
+        "clinical_guideline_diabetes-007-8802035f52"
+      ]
+    },
+    {
+      "id": "diab-09",
+      "question": "When should the first dilated eye examination occur for a patient newly diagnosed with type 2 diabetes?",
+      "answer": "A dilated eye examination for diabetic retinopathy should occur within five years of diagnosis for type 1 diabetes and at the time of diagnosis for type 2 diabetes, then at least every two years thereafter if no retinopathy is found. [1]",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.36787102754787127,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "citation_accuracy": 1.0,
+      "keyword_recall": 1.0,
+      "grounded": true,
+      "cost_usd": 0.0,
+      "latency_s": 0.0035968280001270614,
+      "retrieved_chunk_ids": [
+        "clinical_guideline_diabetes-008-0c27c2d180",
+        "clinical_guideline_diabetes-011-7f00a3ea41",
+        "clinical_guideline_diabetes-007-8802035f52",
+        "clinical_guideline_diabetes-009-495d32318d",
+        "clinical_guideline_diabetes-001-db35e5cd12"
+      ],
+      "relevant_chunk_ids": [
+        "clinical_guideline_diabetes-008-0c27c2d180"
+      ]
+    },
+    {
+      "id": "diab-10",
+      "question": "What is the pre-conception HbA1c target for pregnant patients with pre-existing diabetes?",
+      "answer": "In pregnant patients with pre-existing diabetes, the target HbA1c prior to conception is below 6.5% when it can be achieved without significant hypoglycemia. [1]",
+      "faithfulness": 0.4091289236258847,
+      "answer_relevancy": 0.6805020840729029,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "citation_accuracy": 1.0,
+      "keyword_recall": 0.6666666666666666,
+      "grounded": true,
+      "cost_usd": 0.0,
+      "latency_s": 0.003358709000167437,
+      "retrieved_chunk_ids": [
+        "clinical_guideline_diabetes-009-495d32318d",
+        "clinical_guideline_diabetes-006-6bbc29a59b",
+        "clinical_guideline_diabetes-010-1be0f963a0",
+        "clinical_guideline_diabetes-012-982b38da13",
+        "clinical_guideline_diabetes-004-38abdf78ce"
+      ],
+      "relevant_chunk_ids": [
+        "clinical_guideline_diabetes-009-495d32318d"
+      ]
+    },
+    {
+      "id": "diab-11",
+      "question": "During which weeks of gestation should screening for gestational diabetes be performed?",
+      "answer": "Screening for gestational diabetes should be performed at 24 to 28 weeks of gestation using either a one-step 75-gram oral glucose tolerance test or a two-step approach with a 50-gram screen followed by a 100-gram confirmatory test. [1]",
+      "faithfulness": 0.7913227405868968,
+      "answer_relevancy": 0.3032160644503863,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "citation_accuracy": 1.0,
+      "keyword_recall": 1.0,
+      "grounded": true,
+      "cost_usd": 0.0,
+      "latency_s": 0.003414130999999543,
+      "retrieved_chunk_ids": [
+        "clinical_guideline_diabetes-009-495d32318d",
+        "clinical_guideline_diabetes-003-65ed793c2b",
+        "clinical_guideline_diabetes-007-8802035f52",
+        "clinical_guideline_diabetes-012-982b38da13",
+        "clinical_guideline_diabetes-011-7f00a3ea41"
+      ],
+      "relevant_chunk_ids": [
+        "clinical_guideline_diabetes-009-495d32318d"
+      ]
+    },
+    {
+      "id": "diab-12",
+      "question": "What HbA1c target range is reasonable for older adults with significant comorbidity or cognitive impairment?",
+      "answer": "In older adults with diabetes and significant comorbidity or cognitive impairment, an HbA1c target of below 8.0% to 8.5% is reasonable to reduce the risk of hypoglycemia. [1]",
+      "faithfulness": 1.0000000000000007,
+      "answer_relevancy": 0.6608048914803656,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "citation_accuracy": 1.0,
+      "keyword_recall": 1.0,
+      "grounded": true,
+      "cost_usd": 0.0,
+      "latency_s": 0.003315198000109376,
+      "retrieved_chunk_ids": [
+        "clinical_guideline_diabetes-010-1be0f963a0",
+        "clinical_guideline_diabetes-006-6bbc29a59b",
+        "clinical_guideline_diabetes-009-495d32318d",
+        "clinical_guideline_diabetes-001-db35e5cd12",
+        "data_privacy_statute-007-1edf6af2c7"
+      ],
+      "relevant_chunk_ids": [
+        "clinical_guideline_diabetes-010-1be0f963a0"
+      ]
+    },
+    {
+      "id": "diab-13",
+      "question": "How many minutes per week of moderate-to-vigorous aerobic activity are recommended for patients with type 2 diabetes?",
+      "answer": "Patients with type 2 diabetes should aim for at least 150 minutes per week of moderate-to-vigorous aerobic physical activity, spread over at least 3 days per week with no more than 2 consecutive days without activity. [1]",
+      "faithfulness": 0.7524136861181843,
+      "answer_relevancy": 0.5799528573866838,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "citation_accuracy": 1.0,
+      "keyword_recall": 1.0,
+      "grounded": true,
+      "cost_usd": 0.0,
+      "latency_s": 0.0035014100001262705,
+      "retrieved_chunk_ids": [
+        "clinical_guideline_diabetes-011-7f00a3ea41",
+        "clinical_guideline_diabetes-007-8802035f52",
+        "clinical_guideline_diabetes-012-982b38da13",
+        "clinical_guideline_diabetes-008-0c27c2d180",
+        "clinical_guideline_diabetes-004-38abdf78ce"
+      ],
+      "relevant_chunk_ids": [
+        "clinical_guideline_diabetes-011-7f00a3ea41"
+      ]
+    },
+    {
+      "id": "diab-14",
+      "question": "Who should deliver medical nutrition therapy to patients with diabetes, and how often should it be reassessed?",
+      "answer": "Medical nutrition therapy delivered by a registered dietitian should be offered to all patients with diabetes at diagnosis and reassessed at least annually. [1]",
+      "faithfulness": 0.5155260874827149,
+      "answer_relevancy": 0.5028442704592633,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "citation_accuracy": 1.0,
+      "keyword_recall": 1.0,
+      "grounded": true,
+      "cost_usd": 0.0,
+      "latency_s": 0.003453996999951414,
+      "retrieved_chunk_ids": [
+        "clinical_guideline_diabetes-011-7f00a3ea41",
+        "clinical_guideline_diabetes-012-982b38da13",
+        "clinical_guideline_diabetes-007-8802035f52",
+        "clinical_guideline_diabetes-009-495d32318d",
+        "clinical_guideline_diabetes-003-65ed793c2b"
+      ],
+      "relevant_chunk_ids": [
+        "clinical_guideline_diabetes-011-7f00a3ea41"
+      ]
+    },
+    {
+      "id": "diab-15",
+      "question": "What is the general blood pressure target for most patients with diabetes and hypertension?",
+      "answer": "Blood pressure should be measured at every routine clinical visit, with a general target of below 130/80 mmHg for most patients with diabetes and hypertension. [1]",
+      "faithfulness": 0.563772423160963,
+      "answer_relevancy": 0.5797386715376659,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "citation_accuracy": 1.0,
+      "keyword_recall": 1.0,
+      "grounded": true,
+      "cost_usd": 0.0,
+      "latency_s": 0.0036644970000452304,
+      "retrieved_chunk_ids": [
+        "clinical_guideline_diabetes-012-982b38da13",
+        "clinical_guideline_diabetes-006-6bbc29a59b",
+        "clinical_guideline_diabetes-009-495d32318d",
+        "clinical_guideline_diabetes-010-1be0f963a0",
+        "clinical_guideline_diabetes-007-8802035f52"
+      ],
+      "relevant_chunk_ids": [
+        "clinical_guideline_diabetes-012-982b38da13"
+      ]
+    },
+    {
+      "id": "diab-16",
+      "question": "For which age range should a statin be prescribed to patients with diabetes regardless of baseline lipid levels?",
+      "answer": "A moderate-intensity or high-intensity statin should be prescribed for all patients with diabetes aged 40 to 75 years, in addition to lifestyle therapy, regardless of baseline lipid levels. [1]",
+      "faithfulness": 0.7048507034456859,
+      "answer_relevancy": 0.39876067008054233,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "citation_accuracy": 1.0,
+      "keyword_recall": 1.0,
+      "grounded": true,
+      "cost_usd": 0.0,
+      "latency_s": 0.0036404950001269754,
+      "retrieved_chunk_ids": [
+        "clinical_guideline_diabetes-012-982b38da13",
+        "clinical_guideline_diabetes-003-65ed793c2b",
+        "clinical_guideline_diabetes-011-7f00a3ea41",
+        "clinical_guideline_diabetes-007-8802035f52",
+        "clinical_guideline_diabetes-009-495d32318d"
+      ],
+      "relevant_chunk_ids": [
+        "clinical_guideline_diabetes-012-982b38da13"
+      ]
+    },
+    {
+      "id": "fin-01",
+      "question": "What is the minimum Common Equity Tier 1 capital ratio a covered depository institution must maintain?",
+      "answer": "A covered depository institution must maintain a Common Equity Tier 1 capital ratio of at least 4.5 percent of total risk-weighted assets at all times. [1]",
+      "faithfulness": 0.8672016312307468,
+      "answer_relevancy": 0.5949218057093537,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "citation_accuracy": 1.0,
+      "keyword_recall": 1.0,
+      "grounded": true,
+      "cost_usd": 0.0,
+      "latency_s": 0.003539781000199582,
+      "retrieved_chunk_ids": [
+        "financial_reg_capital_adequacy-001-c665d304cd",
+        "financial_reg_capital_adequacy-008-1c9701c54f",
+        "financial_reg_capital_adequacy-002-246ed302aa",
+        "financial_reg_capital_adequacy-003-ccf423979b",
+        "financial_reg_capital_adequacy-004-f1b0e7dffc"
+      ],
+      "relevant_chunk_ids": [
+        "financial_reg_capital_adequacy-001-c665d304cd"
+      ]
+    },
+    {
+      "id": "fin-02",
+      "question": "What is the minimum total capital ratio required under this regulation?",
+      "answer": "The minimum total capital ratio, comprising Tier 1 and Tier 2 capital, is set at 8.0 percent of total risk-weighted assets. [1]",
+      "faithfulness": 0.8676476075116136,
+      "answer_relevancy": 0.39010526518318767,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "citation_accuracy": 1.0,
+      "keyword_recall": 1.0,
+      "grounded": true,
+      "cost_usd": 0.0,
+      "latency_s": 0.003272125999956188,
+      "retrieved_chunk_ids": [
+        "financial_reg_capital_adequacy-001-c665d304cd",
+        "financial_reg_capital_adequacy-008-1c9701c54f",
+        "financial_reg_capital_adequacy-002-246ed302aa",
+        "financial_reg_capital_adequacy-012-053c711195",
+        "financial_reg_capital_adequacy-011-28b157c335"
+      ],
+      "relevant_chunk_ids": [
+        "financial_reg_capital_adequacy-001-c665d304cd"
+      ]
+    },
+    {
+      "id": "fin-03",
+      "question": "What is the required capital conservation buffer, and what type of capital must compose it?",
+      "answer": "In addition to minimum ratios, a capital conservation buffer of 2.5 percent of risk-weighted assets, composed entirely of Common Equity Tier 1 capital, must be maintained to avoid restrictions on capital distributions. [1] The minimum total capital ratio, comprising Tier 1 and Tier 2 capital, is set at 8.0 percent of total risk-weighted assets. [2] A dilated eye examination for diabetic retinopathy should occur within five years of diagnosis for type 1 diabetes and at the time of diagnosis for type 2 diabetes, then at least every two years thereafter if no retinopathy is found. [3]",
+      "faithfulness": 0.9558825358372042,
+      "answer_relevancy": 0.32903470302441645,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "citation_accuracy": 0.3333333333333333,
+      "keyword_recall": 1.0,
+      "grounded": true,
+      "cost_usd": 0.0,
+      "latency_s": 0.0034060590000990487,
+      "retrieved_chunk_ids": [
+        "financial_reg_capital_adequacy-002-246ed302aa",
+        "financial_reg_capital_adequacy-001-c665d304cd",
+        "clinical_guideline_diabetes-008-0c27c2d180",
+        "insurance_policy_group402-006-555b85b931",
+        "financial_reg_capital_adequacy-009-43d7567422"
+      ],
+      "relevant_chunk_ids": [
+        "financial_reg_capital_adequacy-002-246ed302aa"
+      ]
+    },
+    {
+      "id": "fin-04",
+      "question": "What additional capital surcharge applies to a global systemically important bank?",
+      "answer": "An institution designated as a global systemically important bank must hold an additional common equity surcharge ranging from 1.0 to 3.5 percent of risk-weighted assets, determined by its systemic risk score. [1]",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.31017057717950436,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "citation_accuracy": 1.0,
+      "keyword_recall": 1.0,
+      "grounded": true,
+      "cost_usd": 0.0,
+      "latency_s": 0.0032958099998268153,
+      "retrieved_chunk_ids": [
+        "financial_reg_capital_adequacy-003-ccf423979b",
+        "financial_reg_capital_adequacy-002-246ed302aa",
+        "insurance_policy_group402-003-441071900c",
+        "data_privacy_statute-010-455706c4fa",
+        "data_privacy_statute-001-436ab386cd"
+      ],
+      "relevant_chunk_ids": [
+        "financial_reg_capital_adequacy-003-ccf423979b"
+      ]
+    },
+    {
+      "id": "fin-05",
+      "question": "What is the minimum Liquidity Coverage Ratio and over what stress period is it measured?",
+      "answer": "Covered institutions must maintain a Liquidity Coverage Ratio of at least 100 percent, ensuring high-quality liquid assets are sufficient to cover total net cash outflows over a 30-calendar-day stress period. [1]",
+      "faithfulness": 1.000000000000001,
+      "answer_relevancy": 0.256264225458984,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "citation_accuracy": 1.0,
+      "keyword_recall": 1.0,
+      "grounded": true,
+      "cost_usd": 0.0,
+      "latency_s": 0.003400011000167069,
+      "retrieved_chunk_ids": [
+        "financial_reg_capital_adequacy-004-f1b0e7dffc",
+        "financial_reg_capital_adequacy-001-c665d304cd",
+        "financial_reg_capital_adequacy-008-1c9701c54f",
+        "insurance_policy_group402-005-336fb06394",
+        "financial_reg_capital_adequacy-012-053c711195"
+      ],
+      "relevant_chunk_ids": [
+        "financial_reg_capital_adequacy-004-f1b0e7dffc"
+      ]
+    },
+    {
+      "id": "fin-06",
+      "question": "What haircut range applies to Level 2 high-quality liquid assets?",
+      "answer": "High-quality liquid assets are classified into Level 1 assets, which are not subject to a haircut, and Level 2 assets, which are subject to haircuts of 15 to 50 percent depending on subcategory. [1]",
+      "faithfulness": 0.8782917204366881,
+      "answer_relevancy": 0.4584587543390026,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "citation_accuracy": 1.0,
+      "keyword_recall": 1.0,
+      "grounded": true,
+      "cost_usd": 0.0,
+      "latency_s": 0.00319274100002076,
+      "retrieved_chunk_ids": [
+        "financial_reg_capital_adequacy-005-e348bf1f7f",
+        "financial_reg_capital_adequacy-004-f1b0e7dffc",
+        "lab_sop_document_control-009-8da865d95a",
+        "insurance_policy_group402-003-441071900c",
+        "data_privacy_statute-001-436ab386cd"
+      ],
+      "relevant_chunk_ids": [
+        "financial_reg_capital_adequacy-005-e348bf1f7f"
+      ]
+    },
+    {
+      "id": "fin-07",
+      "question": "What is the maximum share of total high-quality liquid assets that Level 2 assets may represent?",
+      "answer": "Level 2 assets in aggregate may not exceed 40 percent of an institution's total stock of high-quality liquid assets after applicable haircuts. [1]",
+      "faithfulness": 0.809685936837248,
+      "answer_relevancy": 0.4677585501595582,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "citation_accuracy": 1.0,
+      "keyword_recall": 1.0,
+      "grounded": true,
+      "cost_usd": 0.0,
+      "latency_s": 0.0034088879999671917,
+      "retrieved_chunk_ids": [
+        "financial_reg_capital_adequacy-005-e348bf1f7f",
+        "financial_reg_capital_adequacy-004-f1b0e7dffc",
+        "financial_reg_capital_adequacy-001-c665d304cd",
+        "financial_reg_capital_adequacy-006-a2015af256",
+        "data_privacy_statute-008-4723a4d82e"
+      ],
+      "relevant_chunk_ids": [
+        "financial_reg_capital_adequacy-005-e348bf1f7f"
+      ]
+    },
+    {
+      "id": "fin-08",
+      "question": "Which institutions are required to conduct an annual company-run stress test, and under how many scenarios?",
+      "answer": "Covered institutions with total consolidated assets of 100 billion dollars or more must conduct an annual company-run stress test under baseline, adverse, and severely adverse scenarios published by the regulator. [1]",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.41291370275435757,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "citation_accuracy": 1.0,
+      "keyword_recall": 1.0,
+      "grounded": true,
+      "cost_usd": 0.0,
+      "latency_s": 0.003436937999822476,
+      "retrieved_chunk_ids": [
+        "financial_reg_capital_adequacy-006-a2015af256",
+        "financial_reg_capital_adequacy-007-43dfee32cd",
+        "insurance_policy_group402-002-54d85eda9b",
+        "financial_reg_capital_adequacy-004-f1b0e7dffc",
+        "financial_reg_capital_adequacy-011-28b157c335"
+      ],
+      "relevant_chunk_ids": [
+        "financial_reg_capital_adequacy-006-a2015af256"
+      ]
+    },
+    {
+      "id": "fin-09",
+      "question": "By what date must annual stress test results be submitted to the regulator?",
+      "answer": "Results of the annual company-run stress test must be submitted to the regulator no later than April 5 of each calendar year and published in a public summary within 15 days of submission. [1]",
+      "faithfulness": 1.0000000000000002,
+      "answer_relevancy": 0.389824826391876,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "citation_accuracy": 1.0,
+      "keyword_recall": 1.0,
+      "grounded": true,
+      "cost_usd": 0.0,
+      "latency_s": 0.0033069459998387174,
+      "retrieved_chunk_ids": [
+        "financial_reg_capital_adequacy-007-43dfee32cd",
+        "financial_reg_capital_adequacy-006-a2015af256",
+        "insurance_policy_group402-007-1cb961bc58",
+        "clinical_guideline_diabetes-009-495d32318d",
+        "insurance_policy_group402-002-54d85eda9b"
+      ],
+      "relevant_chunk_ids": [
+        "financial_reg_capital_adequacy-007-43dfee32cd"
+      ]
+    },
+    {
+      "id": "fin-10",
+      "question": "What post-stress Common Equity Tier 1 ratio threshold triggers a required capital remediation plan?",
+      "answer": "An institution that fails to maintain a post-stress Common Equity Tier 1 ratio above 4.5 percent under the severely adverse scenario must submit a capital remediation plan within 30 days. [1]",
+      "faithfulness": 1.0000000000000009,
+      "answer_relevancy": 0.4344370238579542,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "citation_accuracy": 1.0,
+      "keyword_recall": 1.0,
+      "grounded": true,
+      "cost_usd": 0.0,
+      "latency_s": 0.0034029939997708425,
+      "retrieved_chunk_ids": [
+        "financial_reg_capital_adequacy-008-1c9701c54f",
+        "financial_reg_capital_adequacy-001-c665d304cd",
+        "financial_reg_capital_adequacy-002-246ed302aa",
+        "financial_reg_capital_adequacy-003-ccf423979b",
+        "financial_reg_capital_adequacy-004-f1b0e7dffc"
+      ],
+      "relevant_chunk_ids": [
+        "financial_reg_capital_adequacy-008-1c9701c54f"
+      ]
+    },
+    {
+      "id": "fin-11",
+      "question": "What is the filing deadline for the quarterly regulatory capital report, Form FR-14Q?",
+      "answer": "Covered institutions must file the quarterly regulatory capital report, Form FR-14Q, no later than 30 calendar days after the end of each fiscal quarter. [1]",
+      "faithfulness": 0.7021274334580008,
+      "answer_relevancy": 0.40896764485074205,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "citation_accuracy": 1.0,
+      "keyword_recall": 1.0,
+      "grounded": true,
+      "cost_usd": 0.0,
+      "latency_s": 0.003454851000014969,
+      "retrieved_chunk_ids": [
+        "financial_reg_capital_adequacy-009-43d7567422",
+        "financial_reg_capital_adequacy-010-c250eb5181",
+        "insurance_policy_group402-004-79455539fe",
+        "financial_reg_capital_adequacy-001-c665d304cd",
+        "insurance_policy_group402-007-1cb961bc58"
+      ],
+      "relevant_chunk_ids": [
+        "financial_reg_capital_adequacy-009-43d7567422"
+      ]
+    },
+    {
+      "id": "fin-12",
+      "question": "Within how many business days must a material error in a previously filed capital report be disclosed?",
+      "answer": "Material errors discovered in a previously filed capital report must be disclosed to the regulator within 5 business days of discovery, along with a corrected filing. [1]",
+      "faithfulness": 0.6383740762713277,
+      "answer_relevancy": 0.5684918552450585,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "citation_accuracy": 1.0,
+      "keyword_recall": 1.0,
+      "grounded": true,
+      "cost_usd": 0.0,
+      "latency_s": 0.003457905999994182,
+      "retrieved_chunk_ids": [
+        "financial_reg_capital_adequacy-009-43d7567422",
+        "insurance_policy_group402-006-555b85b931",
+        "financial_reg_capital_adequacy-002-246ed302aa",
+        "lab_sop_document_control-005-c7fe4a6e13",
+        "financial_reg_capital_adequacy-008-1c9701c54f"
+      ],
+      "relevant_chunk_ids": [
+        "financial_reg_capital_adequacy-009-43d7567422"
+      ]
+    },
+    {
+      "id": "fin-13",
+      "question": "Who must personally attest to the accuracy of each quarterly capital report?",
+      "answer": "The chief financial officer or equivalent senior officer must personally attest to the accuracy of each quarterly capital report prior to submission. [1]",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.48267966064966444,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "citation_accuracy": 1.0,
+      "keyword_recall": 1.0,
+      "grounded": true,
+      "cost_usd": 0.0,
+      "latency_s": 0.003161752999858436,
+      "retrieved_chunk_ids": [
+        "financial_reg_capital_adequacy-010-c250eb5181",
+        "financial_reg_capital_adequacy-009-43d7567422",
+        "financial_reg_capital_adequacy-002-246ed302aa",
+        "financial_reg_capital_adequacy-001-c665d304cd",
+        "lab_sop_document_control-008-ca091319a2"
+      ],
+      "relevant_chunk_ids": [
+        "financial_reg_capital_adequacy-010-c250eb5181"
+      ]
+    },
+    {
+      "id": "fin-14",
+      "question": "What is the minimum Net Stable Funding Ratio required, and over what time horizon is it calculated?",
+      "answer": "Covered institutions must maintain a Net Stable Funding Ratio of at least 100 percent, comparing available stable funding to required stable funding over a one-year horizon. [1]",
+      "faithfulness": 1.0000000000000002,
+      "answer_relevancy": 0.4709681042823027,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "citation_accuracy": 1.0,
+      "keyword_recall": 1.0,
+      "grounded": true,
+      "cost_usd": 0.0,
+      "latency_s": 0.0033757799999420968,
+      "retrieved_chunk_ids": [
+        "financial_reg_capital_adequacy-011-28b157c335",
+        "financial_reg_capital_adequacy-001-c665d304cd",
+        "financial_reg_capital_adequacy-004-f1b0e7dffc",
+        "clinical_guideline_diabetes-008-0c27c2d180",
+        "insurance_policy_group402-006-555b85b931"
+      ],
+      "relevant_chunk_ids": [
+        "financial_reg_capital_adequacy-011-28b157c335"
+      ]
+    },
+    {
+      "id": "fin-15",
+      "question": "What happens to an institution that fails to meet minimum capital ratios for two consecutive quarters?",
+      "answer": "An institution that fails to meet minimum capital ratios for two consecutive quarters is classified as undercapitalized and becomes subject to mandatory restrictions on asset growth and executive compensation. [1]",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.49888653493218355,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "citation_accuracy": 1.0,
+      "keyword_recall": 1.0,
+      "grounded": true,
+      "cost_usd": 0.0,
+      "latency_s": 0.003251609000017197,
+      "retrieved_chunk_ids": [
+        "financial_reg_capital_adequacy-012-053c711195",
+        "financial_reg_capital_adequacy-002-246ed302aa",
+        "financial_reg_capital_adequacy-008-1c9701c54f",
+        "financial_reg_capital_adequacy-001-c665d304cd",
+        "clinical_guideline_diabetes-011-7f00a3ea41"
+      ],
+      "relevant_chunk_ids": [
+        "financial_reg_capital_adequacy-012-053c711195"
+      ]
+    },
+    {
+      "id": "priv-01",
+      "question": "What threshold number of individuals' personal data triggers applicability of this statute?",
+      "answer": "A breach notification to affected individuals must describe the categories of personal data involved, the estimated number of individuals affected, and the remedial steps taken by the entity. [1] This statute applies to any entity that collects, processes, or stores personal data of more than 5,000 individuals within a 12-month period in connection with commercial activity. [2]",
+      "faithfulness": 0.9999999999999996,
+      "answer_relevancy": 0.32014065862353863,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "citation_accuracy": 0.5,
+      "keyword_recall": 1.0,
+      "grounded": true,
+      "cost_usd": 0.0,
+      "latency_s": 0.0032995520000440592,
+      "retrieved_chunk_ids": [
+        "data_privacy_statute-005-934a563b32",
+        "data_privacy_statute-001-436ab386cd",
+        "data_privacy_statute-009-72c186522e",
+        "data_privacy_statute-003-73f60d90ae",
+        "data_privacy_statute-004-b29c2cd207"
+      ],
+      "relevant_chunk_ids": [
+        "data_privacy_statute-001-436ab386cd"
+      ]
+    },
+    {
+      "id": "priv-02",
+      "question": "What type of consent is required before collecting sensitive personal data such as biometric identifiers?",
+      "answer": "Affirmative, opt-in consent must be obtained before collecting sensitive personal data, including health information, biometric identifiers, or precise geolocation data. [1]",
+      "faithfulness": 0.6686488989394315,
+      "answer_relevancy": 0.4759239229523208,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "citation_accuracy": 1.0,
+      "keyword_recall": 1.0,
+      "grounded": true,
+      "cost_usd": 0.0,
+      "latency_s": 0.0032955110000330023,
+      "retrieved_chunk_ids": [
+        "data_privacy_statute-002-a4953be9d3",
+        "data_privacy_statute-009-72c186522e",
+        "insurance_policy_group402-006-555b85b931",
+        "clinical_guideline_diabetes-008-0c27c2d180",
+        "data_privacy_statute-007-1edf6af2c7"
+      ],
+      "relevant_chunk_ids": [
+        "data_privacy_statute-002-a4953be9d3"
+      ]
+    },
+    {
+      "id": "priv-03",
+      "question": "Can an individual revoke consent to data processing, and under what condition regarding the revocation mechanism?",
+      "answer": "Consent requests must be presented separately from other contractual terms and must be revocable by the individual at any time through a mechanism no more burdensome than the one used to obtain consent. [1] An individual has the right to request access to, correction of, or deletion of their personal data, and the covered entity must respond to such a request within 45 calendar days. [2]",
+      "faithfulness": 0.7088286753626856,
+      "answer_relevancy": 0.2090145809136907,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "citation_accuracy": 0.5,
+      "keyword_recall": 1.0,
+      "grounded": true,
+      "cost_usd": 0.0,
+      "latency_s": 0.0036505080001916212,
+      "retrieved_chunk_ids": [
+        "data_privacy_statute-002-a4953be9d3",
+        "data_privacy_statute-007-1edf6af2c7",
+        "insurance_policy_group402-002-54d85eda9b",
+        "insurance_policy_group402-003-441071900c",
+        "data_privacy_statute-005-934a563b32"
+      ],
+      "relevant_chunk_ids": [
+        "data_privacy_statute-002-a4953be9d3"
+      ]
+    },
+    {
+      "id": "priv-04",
+      "question": "Within how many hours of discovering a data breach must the regulator be notified?",
+      "answer": "Upon discovery of a data breach affecting personal data, the covered entity must notify the regulator within 72 hours of becoming aware of the breach. [1]",
+      "faithfulness": 1.0000000000000002,
+      "answer_relevancy": 0.41890671615709124,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "citation_accuracy": 1.0,
+      "keyword_recall": 1.0,
+      "grounded": true,
+      "cost_usd": 0.0,
+      "latency_s": 0.0033366479999585863,
+      "retrieved_chunk_ids": [
+        "data_privacy_statute-003-73f60d90ae",
+        "data_privacy_statute-004-b29c2cd207",
+        "data_privacy_statute-005-934a563b32",
+        "lab_sop_document_control-008-ca091319a2",
+        "financial_reg_capital_adequacy-007-43dfee32cd"
+      ],
+      "relevant_chunk_ids": [
+        "data_privacy_statute-003-73f60d90ae"
+      ]
+    },
+    {
+      "id": "priv-05",
+      "question": "By when must affected individuals be notified of a data breach, absent a law enforcement delay?",
+      "answer": "Affected individuals must be notified of a data breach without undue delay and in no case later than 30 days after the entity becomes aware of the breach, unless a law enforcement investigation requires a delay. [1]",
+      "faithfulness": 1.000000000000001,
+      "answer_relevancy": 0.5449768540401491,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "citation_accuracy": 1.0,
+      "keyword_recall": 1.0,
+      "grounded": true,
+      "cost_usd": 0.0,
+      "latency_s": 0.0032426790000954497,
+      "retrieved_chunk_ids": [
+        "data_privacy_statute-004-b29c2cd207",
+        "data_privacy_statute-005-934a563b32",
+        "data_privacy_statute-003-73f60d90ae",
+        "data_privacy_statute-009-72c186522e",
+        "lab_sop_document_control-005-c7fe4a6e13"
+      ],
+      "relevant_chunk_ids": [
+        "data_privacy_statute-004-b29c2cd207"
+      ]
+    },
+    {
+      "id": "priv-06",
+      "question": "What three elements must a breach notification to affected individuals include?",
+      "answer": "A breach notification to affected individuals must describe the categories of personal data involved, the estimated number of individuals affected, and the remedial steps taken by the entity. [1]",
+      "faithfulness": 0.9999999999999991,
+      "answer_relevancy": 0.3901052651831878,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "citation_accuracy": 1.0,
+      "keyword_recall": 1.0,
+      "grounded": true,
+      "cost_usd": 0.0,
+      "latency_s": 0.003311872000040239,
+      "retrieved_chunk_ids": [
+        "data_privacy_statute-005-934a563b32",
+        "data_privacy_statute-004-b29c2cd207",
+        "data_privacy_statute-003-73f60d90ae",
+        "lab_sop_document_control-005-c7fe4a6e13",
+        "data_privacy_statute-001-436ab386cd"
+      ],
+      "relevant_chunk_ids": [
+        "data_privacy_statute-005-934a563b32"
+      ]
+    },
+    {
+      "id": "priv-07",
+      "question": "What is the maximum retention period for personal data after the collection purpose has been fulfilled?",
+      "answer": "Personal data may not be retained longer than is necessary for the purpose for which it was collected, and in no case longer than 24 months after the purpose has been fulfilled, absent an independent legal retention obligation. [1]",
+      "faithfulness": 0.9999999999999998,
+      "answer_relevancy": 0.30399233309327867,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "citation_accuracy": 1.0,
+      "keyword_recall": 1.0,
+      "grounded": true,
+      "cost_usd": 0.0,
+      "latency_s": 0.0034474080000563845,
+      "retrieved_chunk_ids": [
+        "data_privacy_statute-006-539229c076",
+        "data_privacy_statute-001-436ab386cd",
+        "data_privacy_statute-008-4723a4d82e",
+        "data_privacy_statute-007-1edf6af2c7",
+        "insurance_policy_group402-002-54d85eda9b"
+      ],
+      "relevant_chunk_ids": [
+        "data_privacy_statute-006-539229c076"
+      ]
+    },
+    {
+      "id": "priv-08",
+      "question": "Within how many calendar days must an entity respond to an individual's access, correction, or deletion request?",
+      "answer": "An individual has the right to request access to, correction of, or deletion of their personal data, and the covered entity must respond to such a request within 45 calendar days. [1]",
+      "faithfulness": 0.808550934296881,
+      "answer_relevancy": 0.7126695910377528,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "citation_accuracy": 1.0,
+      "keyword_recall": 1.0,
+      "grounded": true,
+      "cost_usd": 0.0,
+      "latency_s": 0.0035298180000609136,
+      "retrieved_chunk_ids": [
+        "data_privacy_statute-007-1edf6af2c7",
+        "insurance_policy_group402-006-555b85b931",
+        "insurance_policy_group402-007-1cb961bc58",
+        "insurance_policy_group402-008-f12c8430e2",
+        "financial_reg_capital_adequacy-009-43d7567422"
+      ],
+      "relevant_chunk_ids": [
+        "data_privacy_statute-007-1edf6af2c7"
+      ]
+    },
+    {
+      "id": "priv-09",
+      "question": "Under what circumstances may an entity charge a fee for a data access request?",
+      "answer": "An entity may charge a reasonable fee for a data access request only if the request is manifestly unfounded, excessive, or repetitive. [1]",
+      "faithfulness": 0.7584903174387041,
+      "answer_relevancy": 0.5705071127236345,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "citation_accuracy": 1.0,
+      "keyword_recall": 1.0,
+      "grounded": true,
+      "cost_usd": 0.0,
+      "latency_s": 0.0035807840001780278,
+      "retrieved_chunk_ids": [
+        "data_privacy_statute-007-1edf6af2c7",
+        "data_privacy_statute-009-72c186522e",
+        "data_privacy_statute-003-73f60d90ae",
+        "insurance_policy_group402-006-555b85b931",
+        "data_privacy_statute-001-436ab386cd"
+      ],
+      "relevant_chunk_ids": [
+        "data_privacy_statute-007-1edf6af2c7"
+      ]
+    },
+    {
+      "id": "priv-10",
+      "question": "Under what two conditions may personal data be transferred outside the jurisdiction?",
+      "answer": "Personal data may be transferred outside the jurisdiction only if the receiving country has been determined to provide an adequate level of protection, or if the transfer is subject to standard contractual clauses approved by the regulator. [1]",
+      "faithfulness": 1.0000000000000009,
+      "answer_relevancy": 0.33129511962666947,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "citation_accuracy": 1.0,
+      "keyword_recall": 0.6666666666666666,
+      "grounded": true,
+      "cost_usd": 0.0,
+      "latency_s": 0.003456710000136809,
+      "retrieved_chunk_ids": [
+        "data_privacy_statute-008-4723a4d82e",
+        "data_privacy_statute-006-539229c076",
+        "data_privacy_statute-009-72c186522e",
+        "data_privacy_statute-003-73f60d90ae",
+        "data_privacy_statute-002-a4953be9d3"
+      ],
+      "relevant_chunk_ids": [
+        "data_privacy_statute-008-4723a4d82e"
+      ]
+    },
+    {
+      "id": "priv-11",
+      "question": "At what annual processing volume must an entity appoint a data protection officer?",
+      "answer": "An entity that processes personal data of more than 50,000 individuals annually or that processes sensitive personal data as a core activity must appoint a data protection officer. [1]",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.3243470362160147,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "citation_accuracy": 1.0,
+      "keyword_recall": 1.0,
+      "grounded": true,
+      "cost_usd": 0.0,
+      "latency_s": 0.0032742899998083885,
+      "retrieved_chunk_ids": [
+        "data_privacy_statute-009-72c186522e",
+        "data_privacy_statute-007-1edf6af2c7",
+        "data_privacy_statute-010-455706c4fa",
+        "data_privacy_statute-003-73f60d90ae",
+        "financial_reg_capital_adequacy-010-c250eb5181"
+      ],
+      "relevant_chunk_ids": [
+        "data_privacy_statute-009-72c186522e"
+      ]
+    },
+    {
+      "id": "priv-12",
+      "question": "What is the maximum administrative fine for a violation of this statute?",
+      "answer": "A violation of this statute may result in an administrative fine of up to 4 percent of the entity's global annual revenue or 20 million currency units, whichever is greater. [1]",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.31089077468139725,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "citation_accuracy": 1.0,
+      "keyword_recall": 1.0,
+      "grounded": true,
+      "cost_usd": 0.0,
+      "latency_s": 0.003570895999928325,
+      "retrieved_chunk_ids": [
+        "data_privacy_statute-010-455706c4fa",
+        "insurance_policy_group402-002-54d85eda9b",
+        "insurance_policy_group402-003-441071900c",
+        "data_privacy_statute-001-436ab386cd",
+        "data_privacy_statute-007-1edf6af2c7"
+      ],
+      "relevant_chunk_ids": [
+        "data_privacy_statute-010-455706c4fa"
+      ]
+    },
+    {
+      "id": "ins-01",
+      "question": "What categories of services does this policy cover?",
+      "answer": "This policy does not cover cosmetic surgery that is not medically necessary, experimental treatments not approved by the relevant regulatory authority, or services received outside the plan's provider network without prior authorization. [1]",
+      "faithfulness": 0.9999999999999992,
+      "answer_relevancy": 0.26692966360953996,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "citation_accuracy": 0.0,
+      "keyword_recall": 0.0,
+      "grounded": true,
+      "cost_usd": 0.0,
+      "latency_s": 0.003209255999991001,
+      "retrieved_chunk_ids": [
+        "insurance_policy_group402-004-79455539fe",
+        "insurance_policy_group402-005-336fb06394",
+        "insurance_policy_group402-001-c768e45417",
+        "data_privacy_statute-005-934a563b32",
+        "financial_reg_capital_adequacy-004-f1b0e7dffc"
+      ],
+      "relevant_chunk_ids": [
+        "insurance_policy_group402-001-c768e45417"
+      ]
+    },
+    {
+      "id": "ins-02",
+      "question": "What is the annual individual deductible under Group Plan 402?",
+      "answer": "The annual individual deductible under this plan is 1,500 dollars, and the annual family deductible is 3,000 dollars, after which coinsurance applies. [1]",
+      "faithfulness": 0.7134214927054402,
+      "answer_relevancy": 0.4037375432433282,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "citation_accuracy": 1.0,
+      "keyword_recall": 1.0,
+      "grounded": true,
+      "cost_usd": 0.0,
+      "latency_s": 0.0033441699997638352,
+      "retrieved_chunk_ids": [
+        "insurance_policy_group402-002-54d85eda9b",
+        "insurance_policy_group402-003-441071900c",
+        "financial_reg_capital_adequacy-008-1c9701c54f",
+        "insurance_policy_group402-004-79455539fe",
+        "data_privacy_statute-010-455706c4fa"
+      ],
+      "relevant_chunk_ids": [
+        "insurance_policy_group402-002-54d85eda9b"
+      ]
+    },
+    {
+      "id": "ins-03",
+      "question": "What percentage of covered in-network charges does the plan pay after the deductible is met?",
+      "answer": "After the deductible is met, the plan pays 80 percent of covered in-network charges and the member is responsible for a 20 percent coinsurance up to the annual out-of-pocket maximum. [1]",
+      "faithfulness": 0.7480934368185809,
+      "answer_relevancy": 0.30868533550899446,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "citation_accuracy": 1.0,
+      "keyword_recall": 1.0,
+      "grounded": true,
+      "cost_usd": 0.0,
+      "latency_s": 0.0034533720001945767,
+      "retrieved_chunk_ids": [
+        "insurance_policy_group402-002-54d85eda9b",
+        "insurance_policy_group402-004-79455539fe",
+        "insurance_policy_group402-005-336fb06394",
+        "financial_reg_capital_adequacy-009-43d7567422",
+        "insurance_policy_group402-003-441071900c"
+      ],
+      "relevant_chunk_ids": [
+        "insurance_policy_group402-002-54d85eda9b"
+      ]
+    },
+    {
+      "id": "ins-04",
+      "question": "What is the annual out-of-pocket maximum for an individual under this plan?",
+      "answer": "After the deductible is met, the plan pays 80 percent of covered in-network charges and the member is responsible for a 20 percent coinsurance up to the annual out-of-pocket maximum. [1] The annual out-of-pocket maximum is 6,000 dollars for an individual and 12,000 dollars for a family, inclusive of deductible, copayments, and coinsurance. [2]",
+      "faithfulness": 0.676556156602403,
+      "answer_relevancy": 0.40205075990448164,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "citation_accuracy": 0.5,
+      "keyword_recall": 1.0,
+      "grounded": true,
+      "cost_usd": 0.0,
+      "latency_s": 0.0032303509999564994,
+      "retrieved_chunk_ids": [
+        "insurance_policy_group402-002-54d85eda9b",
+        "insurance_policy_group402-003-441071900c",
+        "data_privacy_statute-010-455706c4fa",
+        "data_privacy_statute-007-1edf6af2c7",
+        "financial_reg_capital_adequacy-006-a2015af256"
+      ],
+      "relevant_chunk_ids": [
+        "insurance_policy_group402-003-441071900c"
+      ]
+    },
+    {
+      "id": "ins-05",
+      "question": "What is the copayment for a specialist office visit under this plan?",
+      "answer": "A copayment of 30 dollars applies to each primary care physician office visit, and a copayment of 60 dollars applies to each specialist office visit. [1] The annual individual deductible under this plan is 1,500 dollars, and the annual family deductible is 3,000 dollars, after which coinsurance applies. [2]",
+      "faithfulness": 0.7197652584175454,
+      "answer_relevancy": 0.35968357383805677,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "citation_accuracy": 0.5,
+      "keyword_recall": 1.0,
+      "grounded": true,
+      "cost_usd": 0.0,
+      "latency_s": 0.003114732000085496,
+      "retrieved_chunk_ids": [
+        "insurance_policy_group402-003-441071900c",
+        "insurance_policy_group402-002-54d85eda9b",
+        "insurance_policy_group402-006-555b85b931",
+        "insurance_policy_group402-001-c768e45417",
+        "financial_reg_capital_adequacy-008-1c9701c54f"
+      ],
+      "relevant_chunk_ids": [
+        "insurance_policy_group402-003-441071900c"
+      ]
+    },
+    {
+      "id": "ins-06",
+      "question": "Does this policy cover cosmetic surgery that is not medically necessary?",
+      "answer": "This policy does not cover cosmetic surgery that is not medically necessary, experimental treatments not approved by the relevant regulatory authority, or services received outside the plan's provider network without prior authorization. [1]",
+      "faithfulness": 0.9999999999999992,
+      "answer_relevancy": 0.44943641652398236,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "citation_accuracy": 1.0,
+      "keyword_recall": 0.6666666666666666,
+      "grounded": true,
+      "cost_usd": 0.0,
+      "latency_s": 0.0032215629998972872,
+      "retrieved_chunk_ids": [
+        "insurance_policy_group402-004-79455539fe",
+        "insurance_policy_group402-001-c768e45417",
+        "insurance_policy_group402-005-336fb06394",
+        "data_privacy_statute-006-539229c076",
+        "insurance_policy_group402-000-8d036cf8d9"
+      ],
+      "relevant_chunk_ids": [
+        "insurance_policy_group402-004-79455539fe"
+      ]
+    },
+    {
+      "id": "ins-07",
+      "question": "What type of provider's services are excluded from coverage under this policy?",
+      "answer": "Coverage does not extend to services rendered by a provider who is not licensed in the jurisdiction where the service is performed, nor to injuries sustained during the commission of a felony. [1] This policy does not cover cosmetic surgery that is not medically necessary, experimental treatments not approved by the relevant regulatory authority, or services received outside the plan's provider network without prior authorization. [2]",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.25211687793556303,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "citation_accuracy": 0.5,
+      "keyword_recall": 0.5,
+      "grounded": true,
+      "cost_usd": 0.0,
+      "latency_s": 0.00330070999984855,
+      "retrieved_chunk_ids": [
+        "insurance_policy_group402-005-336fb06394",
+        "insurance_policy_group402-004-79455539fe",
+        "clinical_guideline_diabetes-008-0c27c2d180",
+        "insurance_policy_group402-001-c768e45417",
+        "insurance_policy_group402-007-1cb961bc58"
+      ],
+      "relevant_chunk_ids": [
+        "insurance_policy_group402-005-336fb06394"
+      ]
+    },
+    {
+      "id": "ins-08",
+      "question": "What billed cost threshold triggers a prior authorization requirement for a procedure?",
+      "answer": "Prior authorization is required for all non-emergency inpatient admissions, advanced imaging such as MRI or CT scans, and any procedure with a billed cost exceeding 5,000 dollars. [1]",
+      "faithfulness": 0.6547400613094172,
+      "answer_relevancy": 0.2730968076999475,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "citation_accuracy": 1.0,
+      "keyword_recall": 1.0,
+      "grounded": true,
+      "cost_usd": 0.0,
+      "latency_s": 0.003573546000097849,
+      "retrieved_chunk_ids": [
+        "insurance_policy_group402-006-555b85b931",
+        "insurance_policy_group402-004-79455539fe",
+        "lab_sop_document_control-004-e86c32bdd4",
+        "clinical_guideline_diabetes-009-495d32318d",
+        "insurance_policy_group402-008-f12c8430e2"
+      ],
+      "relevant_chunk_ids": [
+        "insurance_policy_group402-006-555b85b931"
+      ]
+    },
+    {
+      "id": "ins-09",
+      "question": "How many business days before a scheduled non-emergency procedure must a prior authorization request be submitted?",
+      "answer": "A prior authorization request must be submitted at least 5 business days before a scheduled non-emergency procedure, and the plan must respond within 3 business days of receiving a complete request. [1]",
+      "faithfulness": 0.7316357374668658,
+      "answer_relevancy": 0.7926044146626507,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "citation_accuracy": 1.0,
+      "keyword_recall": 1.0,
+      "grounded": true,
+      "cost_usd": 0.0,
+      "latency_s": 0.00390207400005238,
+      "retrieved_chunk_ids": [
+        "insurance_policy_group402-006-555b85b931",
+        "lab_sop_document_control-004-e86c32bdd4",
+        "data_privacy_statute-007-1edf6af2c7",
+        "financial_reg_capital_adequacy-009-43d7567422",
+        "insurance_policy_group402-007-1cb961bc58"
+      ],
+      "relevant_chunk_ids": [
+        "insurance_policy_group402-006-555b85b931"
+      ]
+    },
+    {
+      "id": "ins-10",
+      "question": "Within how many days of the date of service must a reimbursement claim be submitted?",
+      "answer": "A claim for reimbursement must be submitted within 180 days of the date of service, using the standard claim form along with an itemized bill from the provider. [1]",
+      "faithfulness": 0.6958447615002258,
+      "answer_relevancy": 0.6258188344165561,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "citation_accuracy": 1.0,
+      "keyword_recall": 1.0,
+      "grounded": true,
+      "cost_usd": 0.0,
+      "latency_s": 0.00359040700004698,
+      "retrieved_chunk_ids": [
+        "insurance_policy_group402-007-1cb961bc58",
+        "financial_reg_capital_adequacy-007-43dfee32cd",
+        "insurance_policy_group402-008-f12c8430e2",
+        "insurance_policy_group402-006-555b85b931",
+        "lab_sop_document_control-005-c7fe4a6e13"
+      ],
+      "relevant_chunk_ids": [
+        "insurance_policy_group402-007-1cb961bc58"
+      ]
+    },
+    {
+      "id": "ins-11",
+      "question": "Within how many calendar days must the plan process a clean claim and issue payment or denial?",
+      "answer": "The plan must process a clean claim and issue payment or denial within 30 calendar days of receipt; failure to do so entitles the provider to interest on the unpaid amount. [1]",
+      "faithfulness": 0.7172774792150023,
+      "answer_relevancy": 0.6569729210330907,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "citation_accuracy": 1.0,
+      "keyword_recall": 1.0,
+      "grounded": true,
+      "cost_usd": 0.0,
+      "latency_s": 0.0035166850002497085,
+      "retrieved_chunk_ids": [
+        "insurance_policy_group402-007-1cb961bc58",
+        "insurance_policy_group402-008-f12c8430e2",
+        "insurance_policy_group402-006-555b85b931",
+        "data_privacy_statute-007-1edf6af2c7",
+        "financial_reg_capital_adequacy-007-43dfee32cd"
+      ],
+      "relevant_chunk_ids": [
+        "insurance_policy_group402-007-1cb961bc58"
+      ]
+    },
+    {
+      "id": "ins-12",
+      "question": "How many days does a member have to file a first-level internal appeal after a claim denial?",
+      "answer": "A member who disagrees with a claim denial may file a first-level internal appeal within 180 days of the denial notice, and the plan must issue a decision within 30 calendar days for standard appeals or 72 hours for urgent appeals. [1]",
+      "faithfulness": 1.0000000000000002,
+      "answer_relevancy": 0.4688442437514,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "citation_accuracy": 1.0,
+      "keyword_recall": 1.0,
+      "grounded": true,
+      "cost_usd": 0.0,
+      "latency_s": 0.003539413999988028,
+      "retrieved_chunk_ids": [
+        "insurance_policy_group402-008-f12c8430e2",
+        "insurance_policy_group402-007-1cb961bc58",
+        "financial_reg_capital_adequacy-009-43d7567422",
+        "financial_reg_capital_adequacy-005-e348bf1f7f",
+        "insurance_policy_group402-005-336fb06394"
+      ],
+      "relevant_chunk_ids": [
+        "insurance_policy_group402-008-f12c8430e2"
+      ]
+    },
+    {
+      "id": "sop-01",
+      "question": "What does SOP-QA-011 establish a process for?",
+      "answer": "This SOP establishes the process for creating, reviewing, approving, distributing, and revising controlled quality documents within the laboratory quality management system. [1]",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.11671773546032796,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "citation_accuracy": 1.0,
+      "keyword_recall": 1.0,
+      "grounded": true,
+      "cost_usd": 0.0,
+      "latency_s": 0.0035936670001319726,
+      "retrieved_chunk_ids": [
+        "lab_sop_document_control-001-3a7f98157f",
+        "lab_sop_document_control-000-33dd1cd630",
+        "insurance_policy_group402-007-1cb961bc58",
+        "lab_sop_document_control-004-e86c32bdd4",
+        "insurance_policy_group402-005-336fb06394"
+      ],
+      "relevant_chunk_ids": [
+        "lab_sop_document_control-001-3a7f98157f"
+      ]
+    },
+    {
+      "id": "sop-02",
+      "question": "Which three roles must review and sign a controlled document before it becomes effective?",
+      "answer": "Every controlled document requires review and signature by the document originator, a subject matter expert, and the quality assurance manager before it becomes effective. [1]",
+      "faithfulness": 0.7697335285905966,
+      "answer_relevancy": 0.356233913805997,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "citation_accuracy": 1.0,
+      "keyword_recall": 1.0,
+      "grounded": true,
+      "cost_usd": 0.0,
+      "latency_s": 0.003284373000042251,
+      "retrieved_chunk_ids": [
+        "lab_sop_document_control-002-52175ae94c",
+        "lab_sop_document_control-005-c7fe4a6e13",
+        "lab_sop_document_control-006-b6b82049b6",
+        "lab_sop_document_control-003-1039c2a514",
+        "lab_sop_document_control-004-e86c32bdd4"
+      ],
+      "relevant_chunk_ids": [
+        "lab_sop_document_control-002-52175ae94c"
+      ]
+    },
+    {
+      "id": "sop-03",
+      "question": "What two things must happen before a controlled document may be released for use?",
+      "answer": "A controlled document may not be released for use until it has been assigned a unique document number and entered into the master document log. [1]",
+      "faithfulness": 0.768915707668625,
+      "answer_relevancy": 0.43569964306182,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "citation_accuracy": 1.0,
+      "keyword_recall": 1.0,
+      "grounded": true,
+      "cost_usd": 0.0,
+      "latency_s": 0.00337776399987888,
+      "retrieved_chunk_ids": [
+        "lab_sop_document_control-002-52175ae94c",
+        "lab_sop_document_control-006-b6b82049b6",
+        "lab_sop_document_control-004-e86c32bdd4",
+        "lab_sop_document_control-005-c7fe4a6e13",
+        "lab_sop_document_control-008-ca091319a2"
+      ],
+      "relevant_chunk_ids": [
+        "lab_sop_document_control-002-52175ae94c"
+      ]
+    },
+    {
+      "id": "sop-04",
+      "question": "How often must a controlled document undergo periodic review at minimum?",
+      "answer": "Every controlled document must undergo periodic review at least once every 24 months, even if no content changes are proposed, to confirm continued accuracy and relevance. [1]",
+      "faithfulness": 1.0000000000000007,
+      "answer_relevancy": 0.3966704628221221,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "citation_accuracy": 1.0,
+      "keyword_recall": 1.0,
+      "grounded": true,
+      "cost_usd": 0.0,
+      "latency_s": 0.0032924539998475666,
+      "retrieved_chunk_ids": [
+        "lab_sop_document_control-003-1039c2a514",
+        "lab_sop_document_control-002-52175ae94c",
+        "lab_sop_document_control-006-b6b82049b6",
+        "lab_sop_document_control-005-c7fe4a6e13",
+        "lab_sop_document_control-008-ca091319a2"
+      ],
+      "relevant_chunk_ids": [
+        "lab_sop_document_control-003-1039c2a514"
+      ]
+    },
+    {
+      "id": "sop-05",
+      "question": "What must be submitted before a controlled document can be changed?",
+      "answer": "Every controlled document requires review and signature by the document originator, a subject matter expert, and the quality assurance manager before it becomes effective. [1] Any proposed change to a controlled document must be submitted through a change control request and evaluated for impact on validated processes before implementation. [2] Superseded versions of a controlled document must be removed from active use areas immediately upon the new version's effective date and archived for a minimum of 10 years. [3]",
+      "faithfulness": 0.688589188204571,
+      "answer_relevancy": 0.3499909548863074,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "citation_accuracy": 0.3333333333333333,
+      "keyword_recall": 1.0,
+      "grounded": true,
+      "cost_usd": 0.0,
+      "latency_s": 0.0032112460000917054,
+      "retrieved_chunk_ids": [
+        "lab_sop_document_control-002-52175ae94c",
+        "lab_sop_document_control-004-e86c32bdd4",
+        "lab_sop_document_control-006-b6b82049b6",
+        "lab_sop_document_control-005-c7fe4a6e13",
+        "lab_sop_document_control-008-ca091319a2"
+      ],
+      "relevant_chunk_ids": [
+        "lab_sop_document_control-004-e86c32bdd4"
+      ]
+    },
+    {
+      "id": "sop-06",
+      "question": "What approvals are required for a major change that affects a validated method?",
+      "answer": "A change classified as major, meaning it affects a validated method or a critical process parameter, requires re-validation and approval from the quality assurance manager and the laboratory director prior to implementation. [1]",
+      "faithfulness": 0.745802186383565,
+      "answer_relevancy": 0.2839986218162879,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "citation_accuracy": 1.0,
+      "keyword_recall": 0.6666666666666666,
+      "grounded": true,
+      "cost_usd": 0.0,
+      "latency_s": 0.0034020499999769527,
+      "retrieved_chunk_ids": [
+        "lab_sop_document_control-004-e86c32bdd4",
+        "lab_sop_document_control-007-9a59e48950",
+        "insurance_policy_group402-006-555b85b931",
+        "financial_reg_capital_adequacy-011-28b157c335",
+        "financial_reg_capital_adequacy-005-e348bf1f7f"
+      ],
+      "relevant_chunk_ids": [
+        "lab_sop_document_control-004-e86c32bdd4"
+      ]
+    },
+    {
+      "id": "sop-07",
+      "question": "Within how many business days of a document's effective date must affected personnel complete training on the revision?",
+      "answer": "All personnel affected by a revised controlled document must complete documented training on the revision within 10 business days of the document's effective date. [1]",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7608617254195756,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "citation_accuracy": 1.0,
+      "keyword_recall": 1.0,
+      "grounded": true,
+      "cost_usd": 0.0,
+      "latency_s": 0.003109378999852197,
+      "retrieved_chunk_ids": [
+        "lab_sop_document_control-005-c7fe4a6e13",
+        "insurance_policy_group402-006-555b85b931",
+        "lab_sop_document_control-006-b6b82049b6",
+        "lab_sop_document_control-002-52175ae94c",
+        "insurance_policy_group402-007-1cb961bc58"
+      ],
+      "relevant_chunk_ids": [
+        "lab_sop_document_control-005-c7fe4a6e13"
+      ]
+    },
+    {
+      "id": "sop-08",
+      "question": "For how many years must superseded versions of a controlled document be archived?",
+      "answer": "Superseded versions of a controlled document must be removed from active use areas immediately upon the new version's effective date and archived for a minimum of 10 years. [1]",
+      "faithfulness": 0.6604757805075078,
+      "answer_relevancy": 0.4651695005308622,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "citation_accuracy": 1.0,
+      "keyword_recall": 1.0,
+      "grounded": true,
+      "cost_usd": 0.0,
+      "latency_s": 0.003360546999829239,
+      "retrieved_chunk_ids": [
+        "lab_sop_document_control-006-b6b82049b6",
+        "lab_sop_document_control-002-52175ae94c",
+        "clinical_guideline_diabetes-001-db35e5cd12",
+        "lab_sop_document_control-008-ca091319a2",
+        "lab_sop_document_control-005-c7fe4a6e13"
+      ],
+      "relevant_chunk_ids": [
+        "lab_sop_document_control-006-b6b82049b6"
+      ]
+    },
+    {
+      "id": "sop-09",
+      "question": "How must an obsolete document retained for reference be marked?",
+      "answer": "An obsolete document retained for reference must be clearly stamped or watermarked as OBSOLETE and stored separately from current controlled documents. [1]",
+      "faithfulness": 0.616878171745647,
+      "answer_relevancy": 0.4283475105080986,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "citation_accuracy": 1.0,
+      "keyword_recall": 1.0,
+      "grounded": true,
+      "cost_usd": 0.0,
+      "latency_s": 0.0036496189998160844,
+      "retrieved_chunk_ids": [
+        "lab_sop_document_control-006-b6b82049b6",
+        "data_privacy_statute-006-539229c076",
+        "lab_sop_document_control-002-52175ae94c",
+        "lab_sop_document_control-008-ca091319a2",
+        "lab_sop_document_control-005-c7fe4a6e13"
+      ],
+      "relevant_chunk_ids": [
+        "lab_sop_document_control-006-b6b82049b6"
+      ]
+    },
+    {
+      "id": "sop-10",
+      "question": "What three items must an audit trail record for each change to an electronic controlled document?",
+      "answer": "Electronic controlled documents must be maintained in a validated document management system with audit trail functionality that records the identity of the user, the date, and the nature of each change. [1]",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.37480777005897264,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "citation_accuracy": 1.0,
+      "keyword_recall": 1.0,
+      "grounded": true,
+      "cost_usd": 0.0,
+      "latency_s": 0.0033227010001155577,
+      "retrieved_chunk_ids": [
+        "lab_sop_document_control-007-9a59e48950",
+        "lab_sop_document_control-004-e86c32bdd4",
+        "lab_sop_document_control-002-52175ae94c",
+        "lab_sop_document_control-006-b6b82049b6",
+        "lab_sop_document_control-003-1039c2a514"
+      ],
+      "relevant_chunk_ids": [
+        "lab_sop_document_control-007-9a59e48950"
+      ]
+    },
+    {
+      "id": "sop-11",
+      "question": "Within how many hours of discovery must a deviation from a controlled document be documented?",
+      "answer": "Any deviation from an approved controlled document must be documented on a deviation report within 24 hours of discovery and reviewed by the quality assurance manager. [1]",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.5981290585277333,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "citation_accuracy": 1.0,
+      "keyword_recall": 1.0,
+      "grounded": true,
+      "cost_usd": 0.0,
+      "latency_s": 0.0035814919999666017,
+      "retrieved_chunk_ids": [
+        "lab_sop_document_control-008-ca091319a2",
+        "lab_sop_document_control-005-c7fe4a6e13",
+        "data_privacy_statute-003-73f60d90ae",
+        "lab_sop_document_control-002-52175ae94c",
+        "lab_sop_document_control-006-b6b82049b6"
+      ],
+      "relevant_chunk_ids": [
+        "lab_sop_document_control-008-ca091319a2"
+      ]
+    },
+    {
+      "id": "sop-12",
+      "question": "Who holds final authority to approve, reject, or place a controlled document on hold?",
+      "answer": "The quality assurance manager holds final authority to approve, reject, or place on hold any controlled document within the quality management system. [1]",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.6279047115961037,
+      "context_precision": 0.2,
+      "context_recall": 1.0,
+      "citation_accuracy": 1.0,
+      "keyword_recall": 1.0,
+      "grounded": true,
+      "cost_usd": 0.0,
+      "latency_s": 0.003278410000120857,
+      "retrieved_chunk_ids": [
+        "lab_sop_document_control-009-8da865d95a",
+        "lab_sop_document_control-002-52175ae94c",
+        "lab_sop_document_control-004-e86c32bdd4",
+        "lab_sop_document_control-005-c7fe4a6e13",
+        "lab_sop_document_control-006-b6b82049b6"
+      ],
+      "relevant_chunk_ids": [
+        "lab_sop_document_control-009-8da865d95a"
+      ]
+    }
+  ]
+}

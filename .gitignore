@@ -1,0 +1,20 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# built artifacts (regenerate via make ingest / make index)
+data/index/
+*.faiss
+*.pkl
+
+.env
+.DS_Store
+*.log

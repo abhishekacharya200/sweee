@@ -1,0 +1,57 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  lint-test-eval:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install -e ".[dev]"
+
+      - name: Lint
+        run: ruff check src tests scripts
+
+      - name: Unit tests
+        run: pytest -q
+
+      - name: Generate synthetic regulated corpus
+        run: python scripts/generate_corpus.py
+
+      - name: Build golden evaluation set
+        run: python scripts/build_golden_set.py
+
+      - name: Build hybrid search index
+        run: python scripts/build_index.py
+
+      - name: Run RAGAS-style eval gate (offline, mock LLM)
+        env:
+          LLM_PROVIDER: mock
+        run: python scripts/run_eval.py
+
+      - name: Upload eval report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: eval-report
+          path: |
+            eval/report.md
+            eval/results.json
+
+      - name: Docker build (api + ui images)
+        run: |
+          docker build --target api -t ragcite-api:ci .
+          docker build --target ui -t ragcite-ui:ci .

@@ -1,0 +1,1051 @@
+[
+  {
+    "id": "diab-01",
+    "doc_id": "clinical_guideline_diabetes",
+    "doc_title": "Clinical Practice Guideline: Management of Type 2 Diabetes Mellitus",
+    "section": "Screening and Diagnosis",
+    "question": "At what age should asymptomatic adults begin routine screening for type 2 diabetes, and how often?",
+    "reference_answer": "Adults aged 35 or older should be screened at least every 3 years.",
+    "keywords": [
+      "35",
+      "screen",
+      "3 years"
+    ],
+    "relevant_chunk_ids": [
+      "clinical_guideline_diabetes-001-db35e5cd12"
+    ]
+  },
+  {
+    "id": "diab-02",
+    "doc_id": "clinical_guideline_diabetes",
+    "doc_title": "Clinical Practice Guideline: Management of Type 2 Diabetes Mellitus",
+    "section": "Screening and Diagnosis",
+    "question": "Which HbA1c threshold confirms a diagnosis of diabetes?",
+    "reference_answer": "An HbA1c of 6.5% or greater confirms a diagnosis of diabetes.",
+    "keywords": [
+      "HbA1c",
+      "6.5%"
+    ],
+    "relevant_chunk_ids": [
+      "clinical_guideline_diabetes-002-19bfb0f2cb"
+    ]
+  },
+  {
+    "id": "diab-03",
+    "doc_id": "clinical_guideline_diabetes",
+    "doc_title": "Clinical Practice Guideline: Management of Type 2 Diabetes Mellitus",
+    "section": "Screening and Diagnosis",
+    "question": "At what BMI should adults with an additional risk factor be screened for diabetes regardless of age?",
+    "reference_answer": "Adults with a BMI of 25 kg/m2 or higher and at least one additional risk factor should be screened at any age.",
+    "keywords": [
+      "BMI",
+      "25",
+      "risk factor"
+    ],
+    "relevant_chunk_ids": [
+      "clinical_guideline_diabetes-003-65ed793c2b"
+    ]
+  },
+  {
+    "id": "diab-04",
+    "doc_id": "clinical_guideline_diabetes",
+    "doc_title": "Clinical Practice Guideline: Management of Type 2 Diabetes Mellitus",
+    "section": "Pharmacologic Therapy",
+    "question": "What is the preferred initial pharmacologic agent for most patients with type 2 diabetes?",
+    "reference_answer": "Metformin is the preferred initial pharmacologic agent, started at diagnosis unless eGFR is below 30 mL/min/1.73m2.",
+    "keywords": [
+      "metformin",
+      "initial",
+      "30 mL/min"
+    ],
+    "relevant_chunk_ids": [
+      "clinical_guideline_diabetes-004-38abdf78ce"
+    ]
+  },
+  {
+    "id": "diab-05",
+    "doc_id": "clinical_guideline_diabetes",
+    "doc_title": "Clinical Practice Guideline: Management of Type 2 Diabetes Mellitus",
+    "section": "Pharmacologic Therapy",
+    "question": "Which drug classes should be added for patients with established atherosclerotic cardiovascular disease, independent of HbA1c?",
+    "reference_answer": "A GLP-1 receptor agonist or an SGLT2 inhibitor with demonstrated cardiovascular benefit should be added.",
+    "keywords": [
+      "GLP-1",
+      "SGLT2",
+      "cardiovascular"
+    ],
+    "relevant_chunk_ids": [
+      "clinical_guideline_diabetes-005-5daa7f8b92"
+    ]
+  },
+  {
+    "id": "diab-06",
+    "doc_id": "clinical_guideline_diabetes",
+    "doc_title": "Clinical Practice Guideline: Management of Type 2 Diabetes Mellitus",
+    "section": "Pharmacologic Therapy",
+    "question": "What is the general HbA1c target for most nonpregnant adults with diabetes?",
+    "reference_answer": "The general HbA1c target for most nonpregnant adults is below 7.0%.",
+    "keywords": [
+      "HbA1c",
+      "7.0%",
+      "target"
+    ],
+    "relevant_chunk_ids": [
+      "clinical_guideline_diabetes-006-6bbc29a59b"
+    ]
+  },
+  {
+    "id": "diab-07",
+    "doc_id": "clinical_guideline_diabetes",
+    "doc_title": "Clinical Practice Guideline: Management of Type 2 Diabetes Mellitus",
+    "section": "Monitoring and Complications",
+    "question": "How often should a comprehensive foot examination be performed for patients with diabetes?",
+    "reference_answer": "A comprehensive foot examination should be performed at least annually.",
+    "keywords": [
+      "foot examination",
+      "annually"
+    ],
+    "relevant_chunk_ids": [
+      "clinical_guideline_diabetes-007-8802035f52"
+    ]
+  },
+  {
+    "id": "diab-08",
+    "doc_id": "clinical_guideline_diabetes",
+    "doc_title": "Clinical Practice Guideline: Management of Type 2 Diabetes Mellitus",
+    "section": "Monitoring and Complications",
+    "question": "Which two tests screen for diabetic kidney disease and how frequently should they be performed?",
+    "reference_answer": "Urine albumin-to-creatinine ratio and estimated GFR should be assessed at least once per year.",
+    "keywords": [
+      "albumin-to-creatinine",
+      "GFR",
+      "once per year"
+    ],
+    "relevant_chunk_ids": [
+      "clinical_guideline_diabetes-007-8802035f52"
+    ]
+  },
+  {
+    "id": "diab-09",
+    "doc_id": "clinical_guideline_diabetes",
+    "doc_title": "Clinical Practice Guideline: Management of Type 2 Diabetes Mellitus",
+    "section": "Monitoring and Complications",
+    "question": "When should the first dilated eye examination occur for a patient newly diagnosed with type 2 diabetes?",
+    "reference_answer": "The first dilated eye examination should occur at the time of diagnosis for type 2 diabetes.",
+    "keywords": [
+      "dilated eye examination",
+      "time of diagnosis"
+    ],
+    "relevant_chunk_ids": [
+      "clinical_guideline_diabetes-008-0c27c2d180"
+    ]
+  },
+  {
+    "id": "diab-10",
+    "doc_id": "clinical_guideline_diabetes",
+    "doc_title": "Clinical Practice Guideline: Management of Type 2 Diabetes Mellitus",
+    "section": "Special Populations",
+    "question": "What is the pre-conception HbA1c target for pregnant patients with pre-existing diabetes?",
+    "reference_answer": "The pre-conception HbA1c target is below 6.5%, when achievable without significant hypoglycemia.",
+    "keywords": [
+      "pregnant",
+      "6.5%",
+      "pre-conception"
+    ],
+    "relevant_chunk_ids": [
+      "clinical_guideline_diabetes-009-495d32318d"
+    ]
+  },
+  {
+    "id": "diab-11",
+    "doc_id": "clinical_guideline_diabetes",
+    "doc_title": "Clinical Practice Guideline: Management of Type 2 Diabetes Mellitus",
+    "section": "Special Populations",
+    "question": "During which weeks of gestation should screening for gestational diabetes be performed?",
+    "reference_answer": "Screening for gestational diabetes should be performed at 24 to 28 weeks of gestation.",
+    "keywords": [
+      "gestational",
+      "24",
+      "28 weeks"
+    ],
+    "relevant_chunk_ids": [
+      "clinical_guideline_diabetes-009-495d32318d"
+    ]
+  },
+  {
+    "id": "diab-12",
+    "doc_id": "clinical_guideline_diabetes",
+    "doc_title": "Clinical Practice Guideline: Management of Type 2 Diabetes Mellitus",
+    "section": "Special Populations",
+    "question": "What HbA1c target range is reasonable for older adults with significant comorbidity or cognitive impairment?",
+    "reference_answer": "An HbA1c target of below 8.0% to 8.5% is reasonable for these patients.",
+    "keywords": [
+      "older adults",
+      "8.0%",
+      "8.5%"
+    ],
+    "relevant_chunk_ids": [
+      "clinical_guideline_diabetes-010-1be0f963a0"
+    ]
+  },
+  {
+    "id": "diab-13",
+    "doc_id": "clinical_guideline_diabetes",
+    "doc_title": "Clinical Practice Guideline: Management of Type 2 Diabetes Mellitus",
+    "section": "Lifestyle Management",
+    "question": "How many minutes per week of moderate-to-vigorous aerobic activity are recommended for patients with type 2 diabetes?",
+    "reference_answer": "At least 150 minutes per week, spread over at least 3 days.",
+    "keywords": [
+      "150 minutes",
+      "aerobic",
+      "3 days"
+    ],
+    "relevant_chunk_ids": [
+      "clinical_guideline_diabetes-011-7f00a3ea41"
+    ]
+  },
+  {
+    "id": "diab-14",
+    "doc_id": "clinical_guideline_diabetes",
+    "doc_title": "Clinical Practice Guideline: Management of Type 2 Diabetes Mellitus",
+    "section": "Lifestyle Management",
+    "question": "Who should deliver medical nutrition therapy to patients with diabetes, and how often should it be reassessed?",
+    "reference_answer": "A registered dietitian should deliver it, reassessed at least annually.",
+    "keywords": [
+      "registered dietitian",
+      "annually",
+      "medical nutrition therapy"
+    ],
+    "relevant_chunk_ids": [
+      "clinical_guideline_diabetes-011-7f00a3ea41"
+    ]
+  },
+  {
+    "id": "diab-15",
+    "doc_id": "clinical_guideline_diabetes",
+    "doc_title": "Clinical Practice Guideline: Management of Type 2 Diabetes Mellitus",
+    "section": "Blood Pressure and Lipid Management",
+    "question": "What is the general blood pressure target for most patients with diabetes and hypertension?",
+    "reference_answer": "The general target is below 130/80 mmHg.",
+    "keywords": [
+      "blood pressure",
+      "130/80"
+    ],
+    "relevant_chunk_ids": [
+      "clinical_guideline_diabetes-012-982b38da13"
+    ]
+  },
+  {
+    "id": "diab-16",
+    "doc_id": "clinical_guideline_diabetes",
+    "doc_title": "Clinical Practice Guideline: Management of Type 2 Diabetes Mellitus",
+    "section": "Blood Pressure and Lipid Management",
+    "question": "For which age range should a statin be prescribed to patients with diabetes regardless of baseline lipid levels?",
+    "reference_answer": "A statin should be prescribed for patients aged 40 to 75 years.",
+    "keywords": [
+      "statin",
+      "40",
+      "75 years"
+    ],
+    "relevant_chunk_ids": [
+      "clinical_guideline_diabetes-012-982b38da13"
+    ]
+  },
+  {
+    "id": "fin-01",
+    "doc_id": "financial_reg_capital_adequacy",
+    "doc_title": "Regulation FR-14: Capital Adequacy and Liquidity Requirements for Depository Institutions",
+    "section": "Minimum Capital Ratios",
+    "question": "What is the minimum Common Equity Tier 1 capital ratio a covered depository institution must maintain?",
+    "reference_answer": "A minimum Common Equity Tier 1 capital ratio of 4.5 percent of risk-weighted assets.",
+    "keywords": [
+      "Common Equity Tier 1",
+      "4.5 percent"
+    ],
+    "relevant_chunk_ids": [
+      "financial_reg_capital_adequacy-001-c665d304cd"
+    ]
+  },
+  {
+    "id": "fin-02",
+    "doc_id": "financial_reg_capital_adequacy",
+    "doc_title": "Regulation FR-14: Capital Adequacy and Liquidity Requirements for Depository Institutions",
+    "section": "Minimum Capital Ratios",
+    "question": "What is the minimum total capital ratio required under this regulation?",
+    "reference_answer": "The minimum total capital ratio is 8.0 percent of risk-weighted assets.",
+    "keywords": [
+      "total capital ratio",
+      "8.0 percent"
+    ],
+    "relevant_chunk_ids": [
+      "financial_reg_capital_adequacy-001-c665d304cd"
+    ]
+  },
+  {
+    "id": "fin-03",
+    "doc_id": "financial_reg_capital_adequacy",
+    "doc_title": "Regulation FR-14: Capital Adequacy and Liquidity Requirements for Depository Institutions",
+    "section": "Minimum Capital Ratios",
+    "question": "What is the required capital conservation buffer, and what type of capital must compose it?",
+    "reference_answer": "A 2.5 percent capital conservation buffer composed entirely of Common Equity Tier 1 capital.",
+    "keywords": [
+      "capital conservation buffer",
+      "2.5 percent"
+    ],
+    "relevant_chunk_ids": [
+      "financial_reg_capital_adequacy-002-246ed302aa"
+    ]
+  },
+  {
+    "id": "fin-04",
+    "doc_id": "financial_reg_capital_adequacy",
+    "doc_title": "Regulation FR-14: Capital Adequacy and Liquidity Requirements for Depository Institutions",
+    "section": "Minimum Capital Ratios",
+    "question": "What additional capital surcharge applies to a global systemically important bank?",
+    "reference_answer": "An additional common equity surcharge of 1.0 to 3.5 percent of risk-weighted assets.",
+    "keywords": [
+      "systemically important",
+      "surcharge",
+      "1.0",
+      "3.5 percent"
+    ],
+    "relevant_chunk_ids": [
+      "financial_reg_capital_adequacy-003-ccf423979b"
+    ]
+  },
+  {
+    "id": "fin-05",
+    "doc_id": "financial_reg_capital_adequacy",
+    "doc_title": "Regulation FR-14: Capital Adequacy and Liquidity Requirements for Depository Institutions",
+    "section": "Liquidity Coverage Ratio",
+    "question": "What is the minimum Liquidity Coverage Ratio and over what stress period is it measured?",
+    "reference_answer": "A minimum LCR of 100 percent over a 30-calendar-day stress period.",
+    "keywords": [
+      "Liquidity Coverage Ratio",
+      "100 percent",
+      "30-calendar-day"
+    ],
+    "relevant_chunk_ids": [
+      "financial_reg_capital_adequacy-004-f1b0e7dffc"
+    ]
+  },
+  {
+    "id": "fin-06",
+    "doc_id": "financial_reg_capital_adequacy",
+    "doc_title": "Regulation FR-14: Capital Adequacy and Liquidity Requirements for Depository Institutions",
+    "section": "Liquidity Coverage Ratio",
+    "question": "What haircut range applies to Level 2 high-quality liquid assets?",
+    "reference_answer": "Level 2 assets are subject to haircuts of 15 to 50 percent depending on subcategory.",
+    "keywords": [
+      "Level 2",
+      "haircut",
+      "15",
+      "50 percent"
+    ],
+    "relevant_chunk_ids": [
+      "financial_reg_capital_adequacy-005-e348bf1f7f"
+    ]
+  },
+  {
+    "id": "fin-07",
+    "doc_id": "financial_reg_capital_adequacy",
+    "doc_title": "Regulation FR-14: Capital Adequacy and Liquidity Requirements for Depository Institutions",
+    "section": "Liquidity Coverage Ratio",
+    "question": "What is the maximum share of total high-quality liquid assets that Level 2 assets may represent?",
+    "reference_answer": "Level 2 assets may not exceed 40 percent of total high-quality liquid assets.",
+    "keywords": [
+      "Level 2",
+      "40 percent"
+    ],
+    "relevant_chunk_ids": [
+      "financial_reg_capital_adequacy-005-e348bf1f7f"
+    ]
+  },
+  {
+    "id": "fin-08",
+    "doc_id": "financial_reg_capital_adequacy",
+    "doc_title": "Regulation FR-14: Capital Adequacy and Liquidity Requirements for Depository Institutions",
+    "section": "Stress Testing",
+    "question": "Which institutions are required to conduct an annual company-run stress test, and under how many scenarios?",
+    "reference_answer": "Institutions with total consolidated assets of 100 billion dollars or more, under three scenarios: baseline, adverse, and severely adverse.",
+    "keywords": [
+      "100 billion",
+      "stress test",
+      "severely adverse"
+    ],
+    "relevant_chunk_ids": [
+      "financial_reg_capital_adequacy-006-a2015af256"
+    ]
+  },
+  {
+    "id": "fin-09",
+    "doc_id": "financial_reg_capital_adequacy",
+    "doc_title": "Regulation FR-14: Capital Adequacy and Liquidity Requirements for Depository Institutions",
+    "section": "Stress Testing",
+    "question": "By what date must annual stress test results be submitted to the regulator?",
+    "reference_answer": "Results must be submitted no later than April 5 of each calendar year.",
+    "keywords": [
+      "April 5",
+      "stress test",
+      "submitted"
+    ],
+    "relevant_chunk_ids": [
+      "financial_reg_capital_adequacy-007-43dfee32cd"
+    ]
+  },
+  {
+    "id": "fin-10",
+    "doc_id": "financial_reg_capital_adequacy",
+    "doc_title": "Regulation FR-14: Capital Adequacy and Liquidity Requirements for Depository Institutions",
+    "section": "Stress Testing",
+    "question": "What post-stress Common Equity Tier 1 ratio threshold triggers a required capital remediation plan?",
+    "reference_answer": "A post-stress CET1 ratio at or below 4.5 percent under the severely adverse scenario triggers a remediation plan, due within 30 days.",
+    "keywords": [
+      "post-stress",
+      "4.5 percent",
+      "remediation plan",
+      "30 days"
+    ],
+    "relevant_chunk_ids": [
+      "financial_reg_capital_adequacy-008-1c9701c54f"
+    ]
+  },
+  {
+    "id": "fin-11",
+    "doc_id": "financial_reg_capital_adequacy",
+    "doc_title": "Regulation FR-14: Capital Adequacy and Liquidity Requirements for Depository Institutions",
+    "section": "Reporting Requirements",
+    "question": "What is the filing deadline for the quarterly regulatory capital report, Form FR-14Q?",
+    "reference_answer": "Form FR-14Q must be filed no later than 30 calendar days after the end of each fiscal quarter.",
+    "keywords": [
+      "FR-14Q",
+      "30 calendar days",
+      "quarterly"
+    ],
+    "relevant_chunk_ids": [
+      "financial_reg_capital_adequacy-009-43d7567422"
+    ]
+  },
+  {
+    "id": "fin-12",
+    "doc_id": "financial_reg_capital_adequacy",
+    "doc_title": "Regulation FR-14: Capital Adequacy and Liquidity Requirements for Depository Institutions",
+    "section": "Reporting Requirements",
+    "question": "Within how many business days must a material error in a previously filed capital report be disclosed?",
+    "reference_answer": "Material errors must be disclosed within 5 business days of discovery.",
+    "keywords": [
+      "material error",
+      "5 business days"
+    ],
+    "relevant_chunk_ids": [
+      "financial_reg_capital_adequacy-009-43d7567422"
+    ]
+  },
+  {
+    "id": "fin-13",
+    "doc_id": "financial_reg_capital_adequacy",
+    "doc_title": "Regulation FR-14: Capital Adequacy and Liquidity Requirements for Depository Institutions",
+    "section": "Reporting Requirements",
+    "question": "Who must personally attest to the accuracy of each quarterly capital report?",
+    "reference_answer": "The chief financial officer or an equivalent senior officer must attest to its accuracy.",
+    "keywords": [
+      "chief financial officer",
+      "attest"
+    ],
+    "relevant_chunk_ids": [
+      "financial_reg_capital_adequacy-010-c250eb5181"
+    ]
+  },
+  {
+    "id": "fin-14",
+    "doc_id": "financial_reg_capital_adequacy",
+    "doc_title": "Regulation FR-14: Capital Adequacy and Liquidity Requirements for Depository Institutions",
+    "section": "Net Stable Funding Ratio",
+    "question": "What is the minimum Net Stable Funding Ratio required, and over what time horizon is it calculated?",
+    "reference_answer": "A minimum NSFR of 100 percent over a one-year horizon.",
+    "keywords": [
+      "Net Stable Funding Ratio",
+      "100 percent",
+      "one-year"
+    ],
+    "relevant_chunk_ids": [
+      "financial_reg_capital_adequacy-011-28b157c335"
+    ]
+  },
+  {
+    "id": "fin-15",
+    "doc_id": "financial_reg_capital_adequacy",
+    "doc_title": "Regulation FR-14: Capital Adequacy and Liquidity Requirements for Depository Institutions",
+    "section": "Enforcement and Penalties",
+    "question": "What happens to an institution that fails to meet minimum capital ratios for two consecutive quarters?",
+    "reference_answer": "It is classified as undercapitalized and becomes subject to restrictions on asset growth and executive compensation.",
+    "keywords": [
+      "undercapitalized",
+      "two consecutive quarters"
+    ],
+    "relevant_chunk_ids": [
+      "financial_reg_capital_adequacy-012-053c711195"
+    ]
+  },
+  {
+    "id": "priv-01",
+    "doc_id": "data_privacy_statute",
+    "doc_title": "Data Privacy Compliance Statute, Sections 101-140",
+    "section": "Section 101 - Definitions and Scope",
+    "question": "What threshold number of individuals' personal data triggers applicability of this statute?",
+    "reference_answer": "The statute applies once an entity collects, processes, or stores personal data of more than 5,000 individuals within 12 months.",
+    "keywords": [
+      "5,000 individuals",
+      "12-month"
+    ],
+    "relevant_chunk_ids": [
+      "data_privacy_statute-001-436ab386cd"
+    ]
+  },
+  {
+    "id": "priv-02",
+    "doc_id": "data_privacy_statute",
+    "doc_title": "Data Privacy Compliance Statute, Sections 101-140",
+    "section": "Section 108 - Consent Requirements",
+    "question": "What type of consent is required before collecting sensitive personal data such as biometric identifiers?",
+    "reference_answer": "Affirmative, opt-in consent must be obtained before collecting such sensitive personal data.",
+    "keywords": [
+      "opt-in consent",
+      "biometric",
+      "sensitive personal data"
+    ],
+    "relevant_chunk_ids": [
+      "data_privacy_statute-002-a4953be9d3"
+    ]
+  },
+  {
+    "id": "priv-03",
+    "doc_id": "data_privacy_statute",
+    "doc_title": "Data Privacy Compliance Statute, Sections 101-140",
+    "section": "Section 108 - Consent Requirements",
+    "question": "Can an individual revoke consent to data processing, and under what condition regarding the revocation mechanism?",
+    "reference_answer": "Yes, consent must be revocable at any time through a mechanism no more burdensome than the one used to obtain it.",
+    "keywords": [
+      "revocable",
+      "consent",
+      "no more burdensome"
+    ],
+    "relevant_chunk_ids": [
+      "data_privacy_statute-002-a4953be9d3"
+    ]
+  },
+  {
+    "id": "priv-04",
+    "doc_id": "data_privacy_statute",
+    "doc_title": "Data Privacy Compliance Statute, Sections 101-140",
+    "section": "Section 114 - Breach Notification",
+    "question": "Within how many hours of discovering a data breach must the regulator be notified?",
+    "reference_answer": "The regulator must be notified within 72 hours of the entity becoming aware of the breach.",
+    "keywords": [
+      "72 hours",
+      "breach",
+      "regulator"
+    ],
+    "relevant_chunk_ids": [
+      "data_privacy_statute-003-73f60d90ae"
+    ]
+  },
+  {
+    "id": "priv-05",
+    "doc_id": "data_privacy_statute",
+    "doc_title": "Data Privacy Compliance Statute, Sections 101-140",
+    "section": "Section 114 - Breach Notification",
+    "question": "By when must affected individuals be notified of a data breach, absent a law enforcement delay?",
+    "reference_answer": "Affected individuals must be notified no later than 30 days after the entity becomes aware of the breach.",
+    "keywords": [
+      "30 days",
+      "affected individuals",
+      "notified"
+    ],
+    "relevant_chunk_ids": [
+      "data_privacy_statute-004-b29c2cd207"
+    ]
+  },
+  {
+    "id": "priv-06",
+    "doc_id": "data_privacy_statute",
+    "doc_title": "Data Privacy Compliance Statute, Sections 101-140",
+    "section": "Section 114 - Breach Notification",
+    "question": "What three elements must a breach notification to affected individuals include?",
+    "reference_answer": "The categories of personal data involved, the estimated number of individuals affected, and the remedial steps taken.",
+    "keywords": [
+      "categories of personal data",
+      "remedial steps"
+    ],
+    "relevant_chunk_ids": [
+      "data_privacy_statute-005-934a563b32"
+    ]
+  },
+  {
+    "id": "priv-07",
+    "doc_id": "data_privacy_statute",
+    "doc_title": "Data Privacy Compliance Statute, Sections 101-140",
+    "section": "Section 121 - Data Retention",
+    "question": "What is the maximum retention period for personal data after the collection purpose has been fulfilled?",
+    "reference_answer": "No longer than 24 months after the purpose has been fulfilled, absent an independent legal retention obligation.",
+    "keywords": [
+      "24 months",
+      "retention",
+      "purpose"
+    ],
+    "relevant_chunk_ids": [
+      "data_privacy_statute-006-539229c076"
+    ]
+  },
+  {
+    "id": "priv-08",
+    "doc_id": "data_privacy_statute",
+    "doc_title": "Data Privacy Compliance Statute, Sections 101-140",
+    "section": "Section 125 - Individual Rights",
+    "question": "Within how many calendar days must an entity respond to an individual's access, correction, or deletion request?",
+    "reference_answer": "The entity must respond within 45 calendar days.",
+    "keywords": [
+      "45 calendar days",
+      "access",
+      "deletion"
+    ],
+    "relevant_chunk_ids": [
+      "data_privacy_statute-007-1edf6af2c7"
+    ]
+  },
+  {
+    "id": "priv-09",
+    "doc_id": "data_privacy_statute",
+    "doc_title": "Data Privacy Compliance Statute, Sections 101-140",
+    "section": "Section 125 - Individual Rights",
+    "question": "Under what circumstances may an entity charge a fee for a data access request?",
+    "reference_answer": "Only if the request is manifestly unfounded, excessive, or repetitive.",
+    "keywords": [
+      "fee",
+      "manifestly unfounded",
+      "excessive",
+      "repetitive"
+    ],
+    "relevant_chunk_ids": [
+      "data_privacy_statute-007-1edf6af2c7"
+    ]
+  },
+  {
+    "id": "priv-10",
+    "doc_id": "data_privacy_statute",
+    "doc_title": "Data Privacy Compliance Statute, Sections 101-140",
+    "section": "Section 130 - Cross-Border Transfers",
+    "question": "Under what two conditions may personal data be transferred outside the jurisdiction?",
+    "reference_answer": "If the receiving country provides an adequate level of protection, or the transfer uses standard contractual clauses approved by the regulator.",
+    "keywords": [
+      "cross-border",
+      "adequate level of protection",
+      "standard contractual clauses"
+    ],
+    "relevant_chunk_ids": [
+      "data_privacy_statute-008-4723a4d82e"
+    ]
+  },
+  {
+    "id": "priv-11",
+    "doc_id": "data_privacy_statute",
+    "doc_title": "Data Privacy Compliance Statute, Sections 101-140",
+    "section": "Section 135 - Data Protection Officer",
+    "question": "At what annual processing volume must an entity appoint a data protection officer?",
+    "reference_answer": "An entity processing personal data of more than 50,000 individuals annually must appoint a data protection officer.",
+    "keywords": [
+      "50,000 individuals",
+      "data protection officer"
+    ],
+    "relevant_chunk_ids": [
+      "data_privacy_statute-009-72c186522e"
+    ]
+  },
+  {
+    "id": "priv-12",
+    "doc_id": "data_privacy_statute",
+    "doc_title": "Data Privacy Compliance Statute, Sections 101-140",
+    "section": "Section 140 - Penalties",
+    "question": "What is the maximum administrative fine for a violation of this statute?",
+    "reference_answer": "Up to 4 percent of the entity's global annual revenue or 20 million currency units, whichever is greater.",
+    "keywords": [
+      "4 percent",
+      "20 million",
+      "fine"
+    ],
+    "relevant_chunk_ids": [
+      "data_privacy_statute-010-455706c4fa"
+    ]
+  },
+  {
+    "id": "ins-01",
+    "doc_id": "insurance_policy_group402",
+    "doc_title": "Comprehensive Health Insurance Policy Document, Group Plan 402",
+    "section": "Coverage Overview",
+    "question": "What categories of services does this policy cover?",
+    "reference_answer": "Medically necessary inpatient hospital services, outpatient surgery, emergency care, and physician office visits.",
+    "keywords": [
+      "inpatient",
+      "outpatient surgery",
+      "emergency care"
+    ],
+    "relevant_chunk_ids": [
+      "insurance_policy_group402-001-c768e45417"
+    ]
+  },
+  {
+    "id": "ins-02",
+    "doc_id": "insurance_policy_group402",
+    "doc_title": "Comprehensive Health Insurance Policy Document, Group Plan 402",
+    "section": "Deductibles and Copays",
+    "question": "What is the annual individual deductible under Group Plan 402?",
+    "reference_answer": "The annual individual deductible is 1,500 dollars.",
+    "keywords": [
+      "1,500 dollars",
+      "individual deductible"
+    ],
+    "relevant_chunk_ids": [
+      "insurance_policy_group402-002-54d85eda9b"
+    ]
+  },
+  {
+    "id": "ins-03",
+    "doc_id": "insurance_policy_group402",
+    "doc_title": "Comprehensive Health Insurance Policy Document, Group Plan 402",
+    "section": "Deductibles and Copays",
+    "question": "What percentage of covered in-network charges does the plan pay after the deductible is met?",
+    "reference_answer": "The plan pays 80 percent of covered in-network charges after the deductible is met.",
+    "keywords": [
+      "80 percent",
+      "coinsurance",
+      "deductible"
+    ],
+    "relevant_chunk_ids": [
+      "insurance_policy_group402-002-54d85eda9b"
+    ]
+  },
+  {
+    "id": "ins-04",
+    "doc_id": "insurance_policy_group402",
+    "doc_title": "Comprehensive Health Insurance Policy Document, Group Plan 402",
+    "section": "Deductibles and Copays",
+    "question": "What is the annual out-of-pocket maximum for an individual under this plan?",
+    "reference_answer": "The annual out-of-pocket maximum for an individual is 6,000 dollars.",
+    "keywords": [
+      "6,000 dollars",
+      "out-of-pocket maximum"
+    ],
+    "relevant_chunk_ids": [
+      "insurance_policy_group402-003-441071900c"
+    ]
+  },
+  {
+    "id": "ins-05",
+    "doc_id": "insurance_policy_group402",
+    "doc_title": "Comprehensive Health Insurance Policy Document, Group Plan 402",
+    "section": "Deductibles and Copays",
+    "question": "What is the copayment for a specialist office visit under this plan?",
+    "reference_answer": "The copayment for a specialist office visit is 60 dollars.",
+    "keywords": [
+      "60 dollars",
+      "specialist"
+    ],
+    "relevant_chunk_ids": [
+      "insurance_policy_group402-003-441071900c"
+    ]
+  },
+  {
+    "id": "ins-06",
+    "doc_id": "insurance_policy_group402",
+    "doc_title": "Comprehensive Health Insurance Policy Document, Group Plan 402",
+    "section": "Exclusions",
+    "question": "Does this policy cover cosmetic surgery that is not medically necessary?",
+    "reference_answer": "No, cosmetic surgery that is not medically necessary is excluded from coverage.",
+    "keywords": [
+      "cosmetic surgery",
+      "excluded",
+      "not medically necessary"
+    ],
+    "relevant_chunk_ids": [
+      "insurance_policy_group402-004-79455539fe"
+    ]
+  },
+  {
+    "id": "ins-07",
+    "doc_id": "insurance_policy_group402",
+    "doc_title": "Comprehensive Health Insurance Policy Document, Group Plan 402",
+    "section": "Exclusions",
+    "question": "What type of provider's services are excluded from coverage under this policy?",
+    "reference_answer": "Services rendered by a provider who is not licensed in the jurisdiction where the service is performed are excluded.",
+    "keywords": [
+      "not licensed",
+      "excluded"
+    ],
+    "relevant_chunk_ids": [
+      "insurance_policy_group402-005-336fb06394"
+    ]
+  },
+  {
+    "id": "ins-08",
+    "doc_id": "insurance_policy_group402",
+    "doc_title": "Comprehensive Health Insurance Policy Document, Group Plan 402",
+    "section": "Prior Authorization",
+    "question": "What billed cost threshold triggers a prior authorization requirement for a procedure?",
+    "reference_answer": "A procedure with a billed cost exceeding 5,000 dollars requires prior authorization.",
+    "keywords": [
+      "5,000 dollars",
+      "prior authorization"
+    ],
+    "relevant_chunk_ids": [
+      "insurance_policy_group402-006-555b85b931"
+    ]
+  },
+  {
+    "id": "ins-09",
+    "doc_id": "insurance_policy_group402",
+    "doc_title": "Comprehensive Health Insurance Policy Document, Group Plan 402",
+    "section": "Prior Authorization",
+    "question": "How many business days before a scheduled non-emergency procedure must a prior authorization request be submitted?",
+    "reference_answer": "A prior authorization request must be submitted at least 5 business days before the procedure.",
+    "keywords": [
+      "5 business days",
+      "prior authorization request"
+    ],
+    "relevant_chunk_ids": [
+      "insurance_policy_group402-006-555b85b931"
+    ]
+  },
+  {
+    "id": "ins-10",
+    "doc_id": "insurance_policy_group402",
+    "doc_title": "Comprehensive Health Insurance Policy Document, Group Plan 402",
+    "section": "Claims Process",
+    "question": "Within how many days of the date of service must a reimbursement claim be submitted?",
+    "reference_answer": "A reimbursement claim must be submitted within 180 days of the date of service.",
+    "keywords": [
+      "180 days",
+      "claim",
+      "date of service"
+    ],
+    "relevant_chunk_ids": [
+      "insurance_policy_group402-007-1cb961bc58"
+    ]
+  },
+  {
+    "id": "ins-11",
+    "doc_id": "insurance_policy_group402",
+    "doc_title": "Comprehensive Health Insurance Policy Document, Group Plan 402",
+    "section": "Claims Process",
+    "question": "Within how many calendar days must the plan process a clean claim and issue payment or denial?",
+    "reference_answer": "The plan must process a clean claim within 30 calendar days of receipt.",
+    "keywords": [
+      "30 calendar days",
+      "clean claim"
+    ],
+    "relevant_chunk_ids": [
+      "insurance_policy_group402-007-1cb961bc58"
+    ]
+  },
+  {
+    "id": "ins-12",
+    "doc_id": "insurance_policy_group402",
+    "doc_title": "Comprehensive Health Insurance Policy Document, Group Plan 402",
+    "section": "Appeals",
+    "question": "How many days does a member have to file a first-level internal appeal after a claim denial?",
+    "reference_answer": "A member has 180 days from the denial notice to file a first-level internal appeal.",
+    "keywords": [
+      "180 days",
+      "internal appeal",
+      "denial"
+    ],
+    "relevant_chunk_ids": [
+      "insurance_policy_group402-008-f12c8430e2"
+    ]
+  },
+  {
+    "id": "sop-01",
+    "doc_id": "lab_sop_document_control",
+    "doc_title": "Standard Operating Procedure SOP-QA-011: Document Control and Change Management",
+    "section": "Purpose and Scope",
+    "question": "What does SOP-QA-011 establish a process for?",
+    "reference_answer": "It establishes the process for creating, reviewing, approving, distributing, and revising controlled quality documents.",
+    "keywords": [
+      "controlled quality documents",
+      "process"
+    ],
+    "relevant_chunk_ids": [
+      "lab_sop_document_control-001-3a7f98157f"
+    ]
+  },
+  {
+    "id": "sop-02",
+    "doc_id": "lab_sop_document_control",
+    "doc_title": "Standard Operating Procedure SOP-QA-011: Document Control and Change Management",
+    "section": "Document Approval",
+    "question": "Which three roles must review and sign a controlled document before it becomes effective?",
+    "reference_answer": "The document originator, a subject matter expert, and the quality assurance manager.",
+    "keywords": [
+      "originator",
+      "subject matter expert",
+      "quality assurance manager"
+    ],
+    "relevant_chunk_ids": [
+      "lab_sop_document_control-002-52175ae94c"
+    ]
+  },
+  {
+    "id": "sop-03",
+    "doc_id": "lab_sop_document_control",
+    "doc_title": "Standard Operating Procedure SOP-QA-011: Document Control and Change Management",
+    "section": "Document Approval",
+    "question": "What two things must happen before a controlled document may be released for use?",
+    "reference_answer": "It must be assigned a unique document number and entered into the master document log.",
+    "keywords": [
+      "unique document number",
+      "master document log"
+    ],
+    "relevant_chunk_ids": [
+      "lab_sop_document_control-002-52175ae94c"
+    ]
+  },
+  {
+    "id": "sop-04",
+    "doc_id": "lab_sop_document_control",
+    "doc_title": "Standard Operating Procedure SOP-QA-011: Document Control and Change Management",
+    "section": "Periodic Review",
+    "question": "How often must a controlled document undergo periodic review at minimum?",
+    "reference_answer": "At least once every 24 months, even if no content changes are proposed.",
+    "keywords": [
+      "periodic review",
+      "24 months"
+    ],
+    "relevant_chunk_ids": [
+      "lab_sop_document_control-003-1039c2a514"
+    ]
+  },
+  {
+    "id": "sop-05",
+    "doc_id": "lab_sop_document_control",
+    "doc_title": "Standard Operating Procedure SOP-QA-011: Document Control and Change Management",
+    "section": "Change Control",
+    "question": "What must be submitted before a controlled document can be changed?",
+    "reference_answer": "A change control request must be submitted and evaluated for impact on validated processes.",
+    "keywords": [
+      "change control request",
+      "validated processes"
+    ],
+    "relevant_chunk_ids": [
+      "lab_sop_document_control-004-e86c32bdd4"
+    ]
+  },
+  {
+    "id": "sop-06",
+    "doc_id": "lab_sop_document_control",
+    "doc_title": "Standard Operating Procedure SOP-QA-011: Document Control and Change Management",
+    "section": "Change Control",
+    "question": "What approvals are required for a major change that affects a validated method?",
+    "reference_answer": "Approval from the quality assurance manager and the laboratory director, along with re-validation, prior to implementation.",
+    "keywords": [
+      "major change",
+      "re-validation",
+      "laboratory director"
+    ],
+    "relevant_chunk_ids": [
+      "lab_sop_document_control-004-e86c32bdd4"
+    ]
+  },
+  {
+    "id": "sop-07",
+    "doc_id": "lab_sop_document_control",
+    "doc_title": "Standard Operating Procedure SOP-QA-011: Document Control and Change Management",
+    "section": "Training",
+    "question": "Within how many business days of a document's effective date must affected personnel complete training on the revision?",
+    "reference_answer": "Affected personnel must complete documented training within 10 business days of the effective date.",
+    "keywords": [
+      "10 business days",
+      "training",
+      "effective date"
+    ],
+    "relevant_chunk_ids": [
+      "lab_sop_document_control-005-c7fe4a6e13"
+    ]
+  },
+  {
+    "id": "sop-08",
+    "doc_id": "lab_sop_document_control",
+    "doc_title": "Standard Operating Procedure SOP-QA-011: Document Control and Change Management",
+    "section": "Obsolete Documents",
+    "question": "For how many years must superseded versions of a controlled document be archived?",
+    "reference_answer": "Superseded versions must be archived for a minimum of 10 years.",
+    "keywords": [
+      "superseded",
+      "archived",
+      "10 years"
+    ],
+    "relevant_chunk_ids": [
+      "lab_sop_document_control-006-b6b82049b6"
+    ]
+  },
+  {
+    "id": "sop-09",
+    "doc_id": "lab_sop_document_control",
+    "doc_title": "Standard Operating Procedure SOP-QA-011: Document Control and Change Management",
+    "section": "Obsolete Documents",
+    "question": "How must an obsolete document retained for reference be marked?",
+    "reference_answer": "It must be clearly stamped or watermarked as OBSOLETE.",
+    "keywords": [
+      "obsolete",
+      "stamped",
+      "watermarked"
+    ],
+    "relevant_chunk_ids": [
+      "lab_sop_document_control-006-b6b82049b6"
+    ]
+  },
+  {
+    "id": "sop-10",
+    "doc_id": "lab_sop_document_control",
+    "doc_title": "Standard Operating Procedure SOP-QA-011: Document Control and Change Management",
+    "section": "Electronic Records",
+    "question": "What three items must an audit trail record for each change to an electronic controlled document?",
+    "reference_answer": "The identity of the user, the date, and the nature of each change.",
+    "keywords": [
+      "audit trail",
+      "identity of the user",
+      "nature of each change"
+    ],
+    "relevant_chunk_ids": [
+      "lab_sop_document_control-007-9a59e48950"
+    ]
+  },
+  {
+    "id": "sop-11",
+    "doc_id": "lab_sop_document_control",
+    "doc_title": "Standard Operating Procedure SOP-QA-011: Document Control and Change Management",
+    "section": "Deviations",
+    "question": "Within how many hours of discovery must a deviation from a controlled document be documented?",
+    "reference_answer": "A deviation must be documented within 24 hours of discovery.",
+    "keywords": [
+      "deviation",
+      "24 hours"
+    ],
+    "relevant_chunk_ids": [
+      "lab_sop_document_control-008-ca091319a2"
+    ]
+  },
+  {
+    "id": "sop-12",
+    "doc_id": "lab_sop_document_control",
+    "doc_title": "Standard Operating Procedure SOP-QA-011: Document Control and Change Management",
+    "section": "Roles and Responsibilities",
+    "question": "Who holds final authority to approve, reject, or place a controlled document on hold?",
+    "reference_answer": "The quality assurance manager holds final authority over controlled documents.",
+    "keywords": [
+      "quality assurance manager",
+      "final authority"
+    ],
+    "relevant_chunk_ids": [
+      "lab_sop_document_control-009-8da865d95a"
+    ]
+  }
+]
