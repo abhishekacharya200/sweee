@@ -166,9 +166,9 @@ Measured on the shipped 70-task queue, projected at `claude-sonnet-5` rates:
 | | Per task | Per 10k exceptions/month |
 |---|---|---|
 | Naive implementation (schemas re-sent every turn) | ~$0.05 | ~$500 |
-| With prompt caching on the fixed prefix | ~$0.02 | ~$210 |
+| With prompt caching on the fixed prefix | ~$0.02 | ~$220 |
 
-**Roughly 93% of input tokens are the same ~2,900-token prefix** — the tool
+**Roughly 92% of input tokens are the same ~2,900-token prefix** — the tool
 schemas plus the system prompt — re-sent on each of ~4.8 turns. Nothing about
 the loop choice changes that number; it is a property of a 12-tool surface and
 a short episode.
