@@ -38,3 +38,25 @@ def index_store(all_chunks) -> IndexStore:
     store = IndexStore()
     store.build(all_chunks)
     return store
+
+
+@pytest.fixture(scope="session")
+def world():
+    """The seeded reconciliation world shared by the Project B tests."""
+    from reconagent.world import build_world
+
+    return build_world(20260301)
+
+
+@pytest.fixture
+def ledger(world):
+    """A fresh clone per test — tool calls mutate the store."""
+    store, _ = world
+    return store.clone()
+
+
+@pytest.fixture
+def registry(ledger):
+    from reconagent.tools.registry import build_registry
+
+    return build_registry(ledger)
