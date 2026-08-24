@@ -256,7 +256,6 @@ class ToolRegistry:
     def __init__(self, store: LedgerStore, faults: FaultInjector | None = None) -> None:
         self.store = store
         self.faults = faults
-        self.call_log: list[ToolOutcome] = []
 
     @property
     def tool_names(self) -> list[str]:
@@ -264,80 +263,48 @@ class ToolRegistry:
 
     def call(self, tool_name: str, raw_args: dict | None = None) -> ToolOutcome:
         started = time.perf_counter()
+
+        def failure(error: str, kind: str, *, retryable: bool = False) -> ToolOutcome:
+            return ToolOutcome(
+                tool_name=tool_name,
+                ok=False,
+                latency_s=time.perf_counter() - started,
+                error=error,
+                error_kind=kind,
+                retryable=retryable,
+            )
+
         spec = TOOLS_BY_NAME.get(tool_name)
         if spec is None:
-            return self._log(
-                ToolOutcome(
-                    tool_name=tool_name,
-                    ok=False,
-                    latency_s=time.perf_counter() - started,
-                    error=f"Unknown tool {tool_name!r}. Available tools: {', '.join(self.tool_names)}.",
-                    error_kind="unknown_tool",
-                )
+            return failure(
+                f"Unknown tool {tool_name!r}. Available tools: {', '.join(self.tool_names)}.",
+                "unknown_tool",
             )
 
         try:
             payload = spec.input_model.model_validate(raw_args or {})
         except ValidationError as exc:
-            return self._log(
-                ToolOutcome(
-                    tool_name=tool_name,
-                    ok=False,
-                    latency_s=time.perf_counter() - started,
-                    error=_validation_message(spec, exc),
-                    error_kind="invalid_arguments",
-                )
-            )
+            return failure(_validation_message(spec, exc), "invalid_arguments")
 
         try:
             if self.faults is not None:
                 self.faults.maybe_fail(tool_name)
             result = spec.handler(self.store, payload)
         except TransientToolError as exc:
-            return self._log(
-                ToolOutcome(
-                    tool_name=tool_name,
-                    ok=False,
-                    latency_s=time.perf_counter() - started,
-                    error=str(exc),
-                    error_kind="transient",
-                    retryable=True,
-                )
-            )
+            return failure(str(exc), "transient", retryable=True)
         except HardToolError as exc:
-            return self._log(
-                ToolOutcome(
-                    tool_name=tool_name,
-                    ok=False,
-                    latency_s=time.perf_counter() - started,
-                    error=str(exc),
-                    error_kind="unavailable",
-                )
-            )
+            return failure(str(exc), "unavailable")
         except LedgerError as exc:
-            return self._log(
-                ToolOutcome(
-                    tool_name=tool_name,
-                    ok=False,
-                    latency_s=time.perf_counter() - started,
-                    error=str(exc),
-                    error_kind="domain_error",
-                )
-            )
+            return failure(str(exc), "domain_error")
 
-        return self._log(
-            ToolOutcome(
-                tool_name=tool_name,
-                ok=True,
-                latency_s=time.perf_counter() - started,
-                payload=result.model_dump(mode="json"),
-                terminal=spec.terminal,
-            )
+        return ToolOutcome(
+            tool_name=tool_name,
+            ok=True,
+            latency_s=time.perf_counter() - started,
+            payload=result.model_dump(mode="json"),
+            terminal=spec.terminal,
         )
 
-    def _log(self, outcome: ToolOutcome) -> ToolOutcome:
-        self.call_log.append(outcome)
-        return outcome
 
 
 def _validation_message(spec: ToolSpec, exc: ValidationError) -> str:
