@@ -68,7 +68,8 @@ jobs:
             eval/agent/report.md
             eval/agent/results.json
 
-      - name: Docker build (api + ui images)
+      - name: Docker build (api + ui + mcp images)
         run: |
           docker build --target api -t ragcite-api:ci .
           docker build --target ui -t ragcite-ui:ci .
+          docker build --target mcp -t reconagent-mcp:ci .

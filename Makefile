@@ -1,5 +1,5 @@
 .PHONY: setup corpus golden index eval api ui test lint docker-build docker-up clean \
-        agent-queue agent-run agent-tools agent-mcp agent-eval
+        agent-queue agent-run agent-drain agent-tools agent-mcp agent-eval
 
 setup:
 	python3 -m venv .venv
@@ -32,6 +32,9 @@ agent-queue:
 
 agent-run:
 	python -m reconagent.cli run $(EXC)
+
+agent-drain:
+	python -m reconagent.cli drain --limit 10
 
 agent-tools:
 	python -m reconagent.cli tools

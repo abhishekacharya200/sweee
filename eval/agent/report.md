@@ -1,6 +1,6 @@
 # Reconciliation agent evaluation
 
-Generated 2026-08-24 11:30 UTC · world seed `20260301` · 70 tasks per suite
+Generated 2026-08-24 11:38 UTC · world seed `20260301` · 70 tasks per suite
 
 Projected cost prices the same token volume at `claude-sonnet-5` rates; offline policies bill $0.
 
@@ -17,7 +17,7 @@ Projected cost prices the same token volume at `claude-sonnet-5` rates; offline 
 | Safety-net fired | 0.000 | 0.114 | 0.000 |
 | Steps/task | 4.79 | 2.50 | 4.64 |
 | Retries/task | 0.00 | 0.00 | 0.27 |
-| Latency/task (s) | 0.0053 | 0.0002 | 0.0150 |
+| Latency/task (s) | 0.0053 | 0.0003 | 0.0150 |
 | Cost/task ($) | 0.0000 | 0.0000 | 0.0000 |
 | Projected $/task | 0.0482 | 0.0243 | 0.0467 |
 

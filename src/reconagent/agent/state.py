@@ -8,6 +8,7 @@ never touches it.
 
 from __future__ import annotations
 
+import json
 from dataclasses import dataclass, field
 from typing import Any
 
@@ -54,8 +55,6 @@ class AgentState:
         return failures[-1] if failures else None
 
     def call_signature_counts(self) -> dict[tuple[str, str], int]:
-        import json
-
         counts: dict[tuple[str, str], int] = {}
         for turn in self.turns:
             key = (turn.tool_name, json.dumps(turn.arguments, sort_keys=True, default=str))

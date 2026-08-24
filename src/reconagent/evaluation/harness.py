@@ -20,6 +20,7 @@ from ..agent.loop import run_episode
 from ..agent.policies import build_policy
 from ..agent.trace import STOP_ABANDONED, AgentRun
 from ..budget import Budget
+from ..config import settings
 from ..store import LedgerStore
 from ..tools.faults import FaultInjector
 from ..tools.registry import build_registry
@@ -40,8 +41,9 @@ PROFILES: dict[str, Profile] = {
     "clean": Profile("clean", 0.0, "Every tool answers. Measures reasoning quality alone."),
     "chaos": Profile(
         "chaos",
-        0.12,
-        "12% of read calls fail; one in five of those is non-retryable. Measures failure handling.",
+        settings.fault_rate,
+        f"{settings.fault_rate:.0%} of read calls fail; one in five of those is non-retryable. "
+        "Measures failure handling.",
     ),
 }
 
@@ -193,6 +195,7 @@ def run_suite(
         raise ValueError(f"Unknown profile {profile!r}. Available: {', '.join(PROFILES)}.")
     faults = PROFILES[profile].fault_rate
     world, tasks = build_world(world_seed)
+    budget = budget or settings.budget()
     if limit is not None:
         tasks = tasks[:limit]
 

@@ -9,6 +9,7 @@ behind it. Adding a tool is one entry here and nothing else.
 
 from __future__ import annotations
 
+import json
 import time
 from collections.abc import Callable
 from copy import deepcopy
@@ -177,8 +178,6 @@ class ToolOutcome:
 
     def to_model_text(self) -> str:
         """The exact string handed back to a model as the tool result."""
-        import json
-
         if self.ok:
             return json.dumps(self.payload, separators=(",", ":"), sort_keys=True)
         return json.dumps(

@@ -25,7 +25,7 @@ from typing import Any
 
 from ..budget import Budget, CostLedger, price
 from ..tools.registry import TOOL_SPECS, ToolOutcome, ToolRegistry, input_json_schema
-from .loop import _execute_with_retries, _safety_net
+from .loop import escalate_as_safety_net, execute_with_retries
 from .prompts import SYSTEM_PROMPT, build_task_prompt
 from .trace import STOP_ABANDONED, STOP_ESCALATED, STOP_RESOLVED, AgentRun, AgentStep
 
@@ -91,7 +91,7 @@ def build_agent(
 
     def make_handler(spec):
         def handler(**kwargs: Any) -> str:
-            outcome = _execute_with_retries(registry, spec.name, kwargs, budget)
+            outcome = execute_with_retries(registry, spec.name, kwargs, budget)
             recorder.add(spec.name, kwargs, outcome)
             if not outcome.ok:
                 # ModelRetry is the framework-native channel for "that call was
@@ -190,7 +190,7 @@ def run_framework_episode(
     ledger.add(usage.input_tokens, usage.output_tokens)
 
     if guard is not None:
-        _safety_net(registry, exception_id, guard, run, ledger, detail=detail)
+        escalate_as_safety_net(registry, exception_id, guard, run, ledger, detail=detail)
 
     run.cost_usd = price(model, run.input_tokens, run.output_tokens)
     run.projected_cost_usd = ledger.projected_cost_usd

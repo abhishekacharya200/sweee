@@ -59,7 +59,7 @@ def _digest(outcome: ToolOutcome, limit: int = 160) -> str:
     return text if len(text) <= limit else text[: limit - 1] + "…"
 
 
-def _execute_with_retries(
+def execute_with_retries(
     registry: ToolRegistry, tool_name: str, arguments: dict, budget: Budget
 ) -> ToolOutcome:
     """Retry only what is worth retrying, with exponential backoff.
@@ -109,21 +109,25 @@ def run_episode(
     while True:
         guard = _check_budget(budget, run, ledger, tool_calls, tool_errors)
         if guard:
-            _safety_net(registry, exception_id, guard, run, ledger)
+            escalate_as_safety_net(registry, exception_id, guard, run, ledger)
             break
 
         try:
             decision = policy.next_action(state)
         except Exception as exc:  # noqa: BLE001 - a broken policy must not lose the exception
-            _safety_net(registry, exception_id, GUARD_POLICY_ERROR, run, ledger, detail=str(exc))
+            escalate_as_safety_net(
+                registry, exception_id, GUARD_POLICY_ERROR, run, ledger, detail=str(exc)
+            )
             break
 
         ledger.add(decision.input_tokens, decision.output_tokens)
         if decision.gave_up:
-            _safety_net(registry, exception_id, GUARD_POLICY_GAVE_UP, run, ledger, detail=decision.reasoning)
+            escalate_as_safety_net(
+                registry, exception_id, GUARD_POLICY_GAVE_UP, run, ledger, detail=decision.reasoning
+            )
             break
 
-        outcome = _execute_with_retries(registry, decision.tool_name, decision.arguments, budget)
+        outcome = execute_with_retries(registry, decision.tool_name, decision.arguments, budget)
         tool_calls += outcome.attempts
         if not outcome.ok:
             tool_errors += 1
@@ -164,7 +168,7 @@ def run_episode(
 
         signature = (decision.tool_name, json.dumps(decision.arguments, sort_keys=True, default=str))
         if state.call_signature_counts().get(signature, 0) > budget.max_identical_calls:
-            _safety_net(registry, exception_id, GUARD_REPEAT_LOOP, run, ledger)
+            escalate_as_safety_net(registry, exception_id, GUARD_REPEAT_LOOP, run, ledger)
             break
 
     run.input_tokens = ledger.input_tokens
@@ -191,7 +195,7 @@ def _check_budget(
     return None
 
 
-def _safety_net(
+def escalate_as_safety_net(
     registry: ToolRegistry,
     exception_id: str,
     guard: str,

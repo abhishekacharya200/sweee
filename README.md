@@ -394,6 +394,14 @@ make agent-mcp            # or: python scripts/mcp_server.py
 }
 ```
 
+Or containerised — MCP speaks JSON-RPC over stdio, so the image is driven by
+an attached client rather than a published port:
+
+```bash
+docker build --target mcp -t reconagent-mcp .
+docker run -i --rm reconagent-mcp
+```
+
 | | |
 |---|---|
 | Tools | all 12, with `readOnlyHint`/`idempotentHint` annotations derived from `ToolSpec.mutates` |
@@ -530,6 +538,7 @@ my mind.
 ```bash
 make agent-queue                      # what's in the queue
 make agent-run EXC=EXC-0015           # work one exception, print the full step trace
+make agent-drain                      # work the whole open queue, one bounded episode each
 make agent-tools                      # the tool table above
 make agent-mcp                        # start the MCP server on stdio
 make agent-eval                       # all three suites + the gate

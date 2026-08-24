@@ -6,6 +6,8 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 
+from .budget import Budget
+
 load_dotenv()
 
 ROOT_DIR = Path(__file__).resolve().parents[2]
@@ -45,6 +47,23 @@ class AgentSettings:
         if self.policy in {"anthropic", "pydantic-ai"} and not self.anthropic_api_key:
             return "rules"
         return self.policy
+
+    def budget(self) -> Budget:
+        """The loop's bounds, from env, in one place.
+
+        Every caller goes through this so a limit set in `.env` is actually
+        the limit the loop enforces — configuration nobody reads is worse
+        than no configuration.
+        """
+        return Budget(
+            max_steps=self.max_steps,
+            max_tool_calls=self.max_tool_calls,
+            max_tool_errors=self.max_tool_errors,
+            max_cost_usd=self.max_cost_usd,
+            max_wall_clock_s=self.max_wall_clock_s,
+            tool_max_attempts=self.tool_max_attempts,
+            tool_backoff_base_s=self.tool_backoff_base_s,
+        )
 
 
 settings = AgentSettings()

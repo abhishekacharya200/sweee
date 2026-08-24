@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import pytest
 
-from reconagent.agent.loop import run_episode
+from reconagent.agent.loop import run_episode, run_queue
 from reconagent.agent.policies import RulesPolicy
 from reconagent.agent.state import AgentState, PolicyDecision
 from reconagent.agent.trace import (
@@ -149,3 +149,23 @@ def test_the_rules_policy_reaches_a_disposition_without_the_safety_net(world):
     assert run.guard_trigger is None
     assert run.forced_escalation is False
     assert run.terminal_arguments["resolution_type"] == "bank_fee"
+
+
+def test_draining_the_queue_works_each_exception_independently(registry, ledger):
+    runs = run_queue(registry, RulesPolicy(), FAST, limit=5)
+    assert len(runs) == 5
+    assert len({run.exception_id for run in runs}) == 5
+    assert all(run.stop_reason in {STOP_RESOLVED, STOP_ESCALATED} for run in runs)
+    still_open = ledger.list_exceptions(status=ExceptionStatus.OPEN, limit=1)[0].exception_id
+    assert still_open not in {run.exception_id for run in runs}, (
+        "worked exceptions must leave the open queue"
+    )
+
+
+def test_queue_episodes_do_not_share_turn_history(registry):
+    """Cost goes quadratic if one shift's context accumulates across the queue."""
+    runs = run_queue(registry, RulesPolicy(), FAST, limit=6)
+    first_tokens = runs[0].input_tokens
+    assert all(run.input_tokens < first_tokens * 3 for run in runs), (
+        "input tokens should stay flat across the queue, not grow with it"
+    )

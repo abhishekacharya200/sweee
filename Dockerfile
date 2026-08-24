@@ -27,3 +27,8 @@ CMD ["uvicorn", "ragcite.api.main:app", "--app-dir", "src", "--host", "0.0.0.0",
 
 FROM base AS ui
 CMD ["streamlit", "run", "src/ragcite/app/streamlit_app.py", "--server.address=0.0.0.0", "--server.port=8501"]
+
+# MCP speaks JSON-RPC over stdio, so this image is driven by an attached
+# client (`docker run -i`) rather than by a published port.
+FROM base AS mcp
+CMD ["python", "scripts/mcp_server.py"]

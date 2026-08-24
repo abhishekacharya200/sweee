@@ -8,6 +8,8 @@ else a model needs is in the tool schemas, where it belongs.
 
 from __future__ import annotations
 
+import json
+
 SYSTEM_PROMPT = """\
 You are a reconciliation analyst closing exceptions between an AR ledger and a bank statement feed.
 
@@ -50,8 +52,6 @@ def render_transcript(turns) -> str:
     Used for token accounting even by the offline policies, so a $0 run still
     reports the token volume the same task shape would burn on a real model.
     """
-    import json
-
     lines = []
     for turn in turns:
         lines.append(f"{turn.tool_name}({json.dumps(turn.arguments, sort_keys=True, default=str)})")

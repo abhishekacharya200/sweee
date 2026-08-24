@@ -9,9 +9,8 @@ from __future__ import annotations
 import argparse
 import json
 
-from .agent.loop import run_episode
+from .agent.loop import run_episode, run_queue
 from .agent.policies import build_policy
-from .budget import Budget
 from .config import settings
 from .evaluation import gate, render_markdown, run_suite
 from .evaluation.harness import DEFAULT_GATE_THRESHOLDS
@@ -34,30 +33,59 @@ def _queue(args: argparse.Namespace) -> int:
     return 0
 
 
-def _run(args: argparse.Namespace) -> int:
+def _summarise(run) -> str:
+    return (
+        f"  tool calls {run.tool_calls} (errors {run.tool_errors}, retries {run.retries})"
+        f" · tokens {run.input_tokens}/{run.output_tokens}"
+        f" · ${run.cost_usd:.4f} (projected ${run.projected_cost_usd:.4f}"
+        f" on {settings.anthropic_model}) · {run.wall_clock_s:.3f}s"
+    )
+
+
+def _build_registry(args: argparse.Namespace):
     store, _ = build_world(args.seed)
     faults = FaultInjector(rate=args.fault_rate, seed=args.seed) if args.fault_rate else None
-    registry = build_registry(store.clone(), faults=faults)
+    return build_registry(store.clone(), faults=faults)
+
+
+def _run(args: argparse.Namespace) -> int:
     policy = build_policy(args.policy, model=args.model, api_key=settings.anthropic_api_key)
     run = run_episode(
         args.exception_id,
-        registry,
+        _build_registry(args),
         policy,
-        Budget(
-            max_steps=settings.max_steps,
-            max_tool_calls=settings.max_tool_calls,
-            max_tool_errors=settings.max_tool_errors,
-            max_cost_usd=settings.max_cost_usd,
-            max_wall_clock_s=settings.max_wall_clock_s,
-        ),
+        settings.budget(),
         projection_model=settings.anthropic_model,
     )
     print(run.transcript())
+    print()
+    print(_summarise(run))
+    return 0
+
+
+def _drain(args: argparse.Namespace) -> int:
+    """Work the queue the way a shift would, one bounded episode per exception."""
+    policy = build_policy(args.policy, model=args.model, api_key=settings.anthropic_api_key)
+    runs = run_queue(
+        _build_registry(args),
+        policy,
+        settings.budget(),
+        limit=args.limit,
+        projection_model=settings.anthropic_model,
+    )
+    for run in runs:
+        disposition = (
+            run.terminal_arguments.get("resolution_type", "escalated")
+            if run.terminal_tool == "record_resolution"
+            else "escalated"
+        )
+        flag = "  (safety net)" if run.forced_escalation else ""
+        print(f"  {run.exception_id}  {disposition:<20} {run.tool_calls} calls{flag}")
+    resolved = sum(1 for r in runs if r.stop_reason == "resolved")
+    print(f"\n{len(runs)} worked · {resolved} booked · {len(runs) - resolved} escalated")
     print(
-        f"\n  tool calls {run.tool_calls} (errors {run.tool_errors}, retries {run.retries})"
-        f" · tokens {run.input_tokens}/{run.output_tokens}"
-        f" · ${run.cost_usd:.4f} (projected ${run.projected_cost_usd:.4f} on {settings.anthropic_model})"
-        f" · {run.wall_clock_s:.3f}s"
+        f"  {sum(r.tool_calls for r in runs)} tool calls · "
+        f"projected ${sum(r.projected_cost_usd for r in runs):.4f} total"
     )
     return 0
 
@@ -103,6 +131,13 @@ def build_parser() -> argparse.ArgumentParser:
     run.add_argument("--model", default=settings.anthropic_model)
     run.add_argument("--fault-rate", type=float, default=0.0)
     run.set_defaults(func=_run)
+
+    drain = subparsers.add_parser("drain", help="Work the whole open queue, one episode each.")
+    drain.add_argument("--limit", type=int, default=10)
+    drain.add_argument("--policy", default=settings.resolve_policy())
+    drain.add_argument("--model", default=settings.anthropic_model)
+    drain.add_argument("--fault-rate", type=float, default=0.0)
+    drain.set_defaults(func=_drain)
 
     tools = subparsers.add_parser("tools", help="Show the tool surface.")
     tools.add_argument("--json", action="store_true", help="Emit JSON schemas instead of a table.")
